@@ -1,0 +1,15 @@
+safe: true
+name: Benjamin Bengfort
+markdown: redcarpet
+pygments: true
+include:
+- .htaccess
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.md
+- CNAME
+- LICENSE
+timezone: America/New_York
+url: http://www.cs.umd.edu/~bengfort
+permalink: /:categories/:title/
