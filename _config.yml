@@ -2,8 +2,8 @@ title:            Benjamin Bengfort
 tagline:          "Coder, Competitor, Father, Hand"
 description:      Graduate work at the University of Maryland
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-#url:              http://www.cs.umd.edu/~bengfort
-url:              http://localhost:4000
+url:              http://www.cs.umd.edu/~bengfort
+#url:              http://localhost:4000
 
 # Owner/author information
 owner:

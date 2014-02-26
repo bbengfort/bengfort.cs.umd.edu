@@ -3,26 +3,26 @@
 <title type="text">Benjamin Bengfort</title>
 <subtitle type="text">Coder, Competitor, Father, Hand</subtitle>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml" />
-<link rel="alternate" type="text/html" href="http://localhost:4000" />
-<updated>2014-02-26T00:10:59-05:00</updated>
-<id>http://localhost:4000/</id>
+<link rel="self" type="application/atom+xml" href="http://www.cs.umd.edu/~bengfort/feed.xml" />
+<link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort" />
+<updated>2014-02-26T09:42:00-05:00</updated>
+<id>http://www.cs.umd.edu/~bengfort/</id>
 <author>
   <name>Benjamin Bengfort</name>
-  <uri>http://localhost:4000/</uri>
+  <uri>http://www.cs.umd.edu/~bengfort/</uri>
   <email>bengfort@cs.umd.edu</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Getting Moved In]]></title>
-  <link rel="alternate" type="text/html" href="http://localhost:4000/news/moving-in/" />
-  <id>http://localhost:4000/news/moving-in</id>
+  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/news/moving-in/" />
+  <id>http://www.cs.umd.edu/~bengfort/news/moving-in</id>
   <published>2014-01-16T19:59:24Z</published>
   <updated>2014-01-16T19:59:24Z</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://localhost:4000</uri>
+    <uri>http://www.cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;hr /&gt;
@@ -47,7 +47,7 @@ researching!&lt;/p&gt;
 Markdown in a repository.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://localhost:4000/news/moving-in/&quot;&gt;Getting Moved In&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://localhost:4000&quot;&gt;Benjamin Bengfort&lt;/a&gt; on January 16, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/news/moving-in/&quot;&gt;Getting Moved In&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on January 16, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

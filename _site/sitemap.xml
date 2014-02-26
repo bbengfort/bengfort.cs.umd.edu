@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://localhost:4000</loc>
-    <lastmod>2014-02-26T00:10:59-05:00</lastmod>
+    <loc>http://www.cs.umd.edu/~bengfort</loc>
+    <lastmod>2014-02-26T09:42:00-05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://localhost:4000/404.html</loc>
-    <lastmod>2014-02-26T00:10:59-05:00</lastmod>
+    <loc>http://www.cs.umd.edu/~bengfort/404.html</loc>
+    <lastmod>2014-02-26T09:42:00-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/about/</loc>
-    <lastmod>2014-02-26T00:10:59-05:00</lastmod>
+    <loc>http://www.cs.umd.edu/~bengfort/about/</loc>
+    <lastmod>2014-02-26T09:42:00-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/feed.xml</loc>
-    <lastmod>2014-02-26T00:10:59-05:00</lastmod>
+    <loc>http://www.cs.umd.edu/~bengfort/feed.xml</loc>
+    <lastmod>2014-02-26T09:42:00-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/index.html</loc>
-    <lastmod>2014-02-26T00:10:59-05:00</lastmod>
+    <loc>http://www.cs.umd.edu/~bengfort/index.html</loc>
+    <lastmod>2014-02-26T09:42:00-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/posts/</loc>
-    <lastmod>2014-02-26T00:10:59-05:00</lastmod>
+    <loc>http://www.cs.umd.edu/~bengfort/posts/</loc>
+    <lastmod>2014-02-26T09:42:00-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://localhost:4000/sitemap.xml</loc>
-    <lastmod>2014-02-26T00:10:59-05:00</lastmod>
+    <loc>http://www.cs.umd.edu/~bengfort/sitemap.xml</loc>
+    <lastmod>2014-02-26T09:42:00-05:00</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -53,7 +53,7 @@
 
   
   <url>
-    <loc>http://localhost:4000/news/moving-in/</loc>
+    <loc>http://www.cs.umd.edu/~bengfort/news/moving-in/</loc>
     <lastmod>2014-01-16T19:59:24Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
