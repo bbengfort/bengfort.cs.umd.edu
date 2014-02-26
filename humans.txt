@@ -1,0 +1,31 @@
+---
+layout: nil
+---
+
+/* {{ site.url }} */
+/* {{ site.title }} */
+/* {{ site.tagline }} */
+
+/* ABOUT */
+
+    Author:     {{ site.owner.name }}
+    Twitter:    @{{ site.owner.twitter }}
+    Location:   {{ site.owner.location }}
+
+/* SITE */
+
+    Language:   English
+    Built with: Jekyll <http://jekyllrb.com>
+                LESS
+                jQuery
+                Underscore
+                Sublime Text 3
+                Grunt <http://gruntjs.com>
+                HTML Compressor <https://code.google.com/p/htmlcompressor>
+                SimpleForm <http://getsimpleform.com>
+
+/* SPECIAL THANKS */
+
+   HTML5 Boilerplate <http://html5boilerplate.com>
+   Twitter Bootstrap <http://twitter.github.com/bootstrap>
+   Made Mistakes <http://mmistakes.github.io>

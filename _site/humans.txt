@@ -1,0 +1,27 @@
+/* http://www.cs.umd.edu/~bengfort */
+/* Academic Profile of Benjamin Bengfort */
+/* A graduate research assistant in Computer Science at UMD */
+
+/* ABOUT */
+
+    Author:     Benjamin Bengfort
+    Twitter:    @bbengfort
+    Location:   Washington, D.C. USA
+
+/* SITE */
+
+    Language:   English
+    Built with: Jekyll <http://jekyllrb.com>
+                LESS
+                jQuery
+                Underscore
+                Sublime Text 3
+                Grunt <http://gruntjs.com>
+                HTML Compressor <https://code.google.com/p/htmlcompressor>
+                SimpleForm <http://getsimpleform.com>
+
+/* SPECIAL THANKS */
+
+   HTML5 Boilerplate <http://html5boilerplate.com>
+   Twitter Bootstrap <http://twitter.github.com/bootstrap>
+   Made Mistakes <http://mmistakes.github.io>
