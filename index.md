@@ -1,5 +1,6 @@
 ---
 layout: home
+title: Academic Profile of Benjamin Bengfort
 description: "The academic web page of Benjamin Bengfort, a graduate researcher at UMD"
 tags: [UMD, Metacognition, Computer Science, academia, Benjamin Bengfort]
 image:

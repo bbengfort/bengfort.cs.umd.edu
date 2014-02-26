@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/
-title: About this Page
+title: About my Research
 tagline: Tales by a a graduate research assistant studying Computer Science at Maryland
 tags: [about, Jekyll, theme, responsive]
 modified: 20140-02-26 00:03:16 -0500
