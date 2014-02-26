@@ -1,5 +1,5 @@
 /* http://www.cs.umd.edu/~bengfort */
-/* Academic Profile of Benjamin Bengfort */
+/* Benjamin Bengfort */
 /* A graduate research assistant in Computer Science at UMD */
 
 /* ABOUT */
