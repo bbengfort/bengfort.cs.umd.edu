@@ -112,18 +112,19 @@
     }
 </style>
 
-<p><a href="/images/big_data_er.png" title="Challenges in Big Data for ER (Massive Graph)"><img src="/images/big_data_er.png" alt="Challenges in Big Data for ER" title="Challenges in Big Data for ER (Massive Graph)" /></a></p>
+<p><a href="http://www.cs.umd.edu/~bengfort/images/big_data_er.png" title="Challenges in Big Data for ER (Massive Graph)"><img src="http://www.cs.umd.edu/~bengfort/images/big_data_er.png" alt="Challenges in Big Data for ER" title="Challenges in Big Data for ER (Massive Graph)" /></a></p>
 
 <p>Entity Resolution is becoming an important discipline in Computer Science
 and in Big Data especially with the recent release of Google’s
 <a href="http://www.google.com/insidesearch/features/search/knowledge.html" title="Google's Knowledge Graph">Knowledge Graph</a> and the open <a href="http://www.freebase.com/" title="The Freebase API">Freebase API</a>.
-Therefore it is exceptionally timely that next week at KDD 2013, Dr. Lise
+Therefore it is exceptionally timely that last year at KDD 2013, Dr. Lise
 Getoor of the University of Maryland and Dr. Ashwin Machanavajjhala of
-Duke University are giving a tutorial on
+Duke University gave a tutorial on
 <a href="http://www.kdd.org/kdd2013/accepted-tutorials" title="Accepted Tutorials at KDD 2013"><em>Entity Resolution for Big Data</em></a>. We were fortunate enough
 to be invited to attend a run through workshop at the Center for Scientific
 Computation and Mathematical Modeling at College Park, and wanted to
-highlight some of the key points for those unable to attend.</p>
+highlight some of the key points for those unable to attend. This post has
+been reposted from other sources.</p>
 
 <!--more-->
 
@@ -143,7 +144,7 @@ canonicalized references to particular entities and deduplicating and
 linking entities. As an example, consider the following example of a
 coauthor network from bibliographic data used for InfoVis 2004.</p>
 
-<p><a href="/images/network_resolution.png" title="Network Resolution"><img src="/images/network_resolution.png" alt="ER and Network Analysis" title="Network Resolution" /></a></p>
+<p><a href="http://www.cs.umd.edu/~bengfort/images/network_resolution.png" title="Network Resolution"><img src="http://www.cs.umd.edu/~bengfort/images/network_resolution.png" alt="ER and Network Analysis" title="Network Resolution" /></a></p>
 
 <p>Deduplication significantly reduced the complexity of the network from an
 ninth order graph to a much simpler fourth order graph, of significantly
@@ -179,7 +180,7 @@ to only a single real world entity. We can therefore discuss the ER problem
 as one involving matching record pairs corresponding to the same entity,
 and as a graph of related records/mentions to related entities.</p>
 
-<p><a href="/images/problem_statement.png" title="Abstract ER Problem"><img src="/images/problem_statement.png" alt="Abstract ER Problem" title="Abstract ER Problem" /></a></p>
+<p><a href="http://www.cs.umd.edu/~bengfort/images/problem_statement.png" title="Abstract ER Problem"><img src="http://www.cs.umd.edu/~bengfort/images/problem_statement.png" alt="Abstract ER Problem" title="Abstract ER Problem" /></a></p>
 
 <p><strong>Deduplication</strong>: the task of clustering the records or mentions that
 correspond to the same entity. There is an intensional variant of this
@@ -360,7 +361,7 @@ comparing mentions within cities reduces the comparison space to the more
 managable <em>1 billion</em> comparisions, which takes only 16 minutes at the same
 rate.</p>
 
-<p><a href="/images/blocking.png" title="Blocking Heuristic"><img src="/images/blocking.png" alt="Blocking Heuristic" title="Blocking Heuristic" /></a></p>
+<p><a href="http://www.cs.umd.edu/~bengfort/images/blocking.png" title="Blocking Heuristic"><img src="http://www.cs.umd.edu/~bengfort/images/blocking.png" alt="Blocking Heuristic" title="Blocking Heuristic" /></a></p>
 
 <p>Although some matches can be missed using blocking techniques, the key is
 to select a blocking algorithm that minimizes the subtraction of the set
@@ -381,7 +382,7 @@ long as the set M is not empty. This approach is interesting because
 mentions can be included in more than one canopy, and therefore reduces the
 chance that the blocking method excludes an actual match.</p>
 
-<p><a href="/images/canopy.png" title="Canopy Clustering"><img src="/images/canopy.png" alt="Canopy Clustering" title="Canopy Clustering" /></a></p>
+<p><a href="http://www.cs.umd.edu/~bengfort/images/canopy.png" title="Canopy Clustering"><img src="http://www.cs.umd.edu/~bengfort/images/canopy.png" alt="Canopy Clustering" title="Canopy Clustering" /></a></p>
 
 <p><strong>Distributed ER</strong>: The MapReduce framework is very popular for large,
 parallel tasks and there are several open source frameworks related to
@@ -416,7 +417,7 @@ performance.</p>
 Machanavajjhala for their Tutorial entitled <em>Entity Resolution for Big Data</em>,
 accepted at KDD 2013 in Chicago, Il.</p>
 
-<p>Cobrain employees can find the complete tutorial slides at:
+<p>You can find the complete tutorial slides at:
 <a href="http://www.cs.umd.edu/~getoor/Tutorials/ER_KDD2013.pdf" title="Tutorial Slides">http://www.cs.umd.edu/~getoor/Tutorials/ER_KDD2013.pdf</a></p>
 
 <p>Special thanks to Lise and Ashwin for hosting Cobrain during their

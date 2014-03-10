@@ -5,7 +5,7 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.cs.umd.edu/~bengfort/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort" />
-<updated>2014-03-10T10:11:12-04:00</updated>
+<updated>2014-03-10T10:15:55-04:00</updated>
 <id>http://www.cs.umd.edu/~bengfort/</id>
 <author>
   <name>Benjamin Bengfort</name>
@@ -37,18 +37,19 @@
     }
 &lt;/style&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/big_data_er.png&quot; title=&quot;Challenges in Big Data for ER (Massive Graph)&quot;&gt;&lt;img src=&quot;/images/big_data_er.png&quot; alt=&quot;Challenges in Big Data for ER&quot; title=&quot;Challenges in Big Data for ER (Massive Graph)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/big_data_er.png&quot; title=&quot;Challenges in Big Data for ER (Massive Graph)&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/big_data_er.png&quot; alt=&quot;Challenges in Big Data for ER&quot; title=&quot;Challenges in Big Data for ER (Massive Graph)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Entity Resolution is becoming an important discipline in Computer Science
 and in Big Data especially with the recent release of Google’s
 &lt;a href=&quot;http://www.google.com/insidesearch/features/search/knowledge.html&quot; title=&quot;Google&#39;s Knowledge Graph&quot;&gt;Knowledge Graph&lt;/a&gt; and the open &lt;a href=&quot;http://www.freebase.com/&quot; title=&quot;The Freebase API&quot;&gt;Freebase API&lt;/a&gt;.
-Therefore it is exceptionally timely that next week at KDD 2013, Dr. Lise
+Therefore it is exceptionally timely that last year at KDD 2013, Dr. Lise
 Getoor of the University of Maryland and Dr. Ashwin Machanavajjhala of
-Duke University are giving a tutorial on
+Duke University gave a tutorial on
 &lt;a href=&quot;http://www.kdd.org/kdd2013/accepted-tutorials&quot; title=&quot;Accepted Tutorials at KDD 2013&quot;&gt;&lt;em&gt;Entity Resolution for Big Data&lt;/em&gt;&lt;/a&gt;. We were fortunate enough
 to be invited to attend a run through workshop at the Center for Scientific
 Computation and Mathematical Modeling at College Park, and wanted to
-highlight some of the key points for those unable to attend.&lt;/p&gt;
+highlight some of the key points for those unable to attend. This post has
+been reposted from other sources.&lt;/p&gt;
 
 &lt;!--more--&gt;
 
@@ -68,7 +69,7 @@ canonicalized references to particular entities and deduplicating and
 linking entities. As an example, consider the following example of a
 coauthor network from bibliographic data used for InfoVis 2004.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/network_resolution.png&quot; title=&quot;Network Resolution&quot;&gt;&lt;img src=&quot;/images/network_resolution.png&quot; alt=&quot;ER and Network Analysis&quot; title=&quot;Network Resolution&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/network_resolution.png&quot; title=&quot;Network Resolution&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/network_resolution.png&quot; alt=&quot;ER and Network Analysis&quot; title=&quot;Network Resolution&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Deduplication significantly reduced the complexity of the network from an
 ninth order graph to a much simpler fourth order graph, of significantly
@@ -104,7 +105,7 @@ to only a single real world entity. We can therefore discuss the ER problem
 as one involving matching record pairs corresponding to the same entity,
 and as a graph of related records/mentions to related entities.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/problem_statement.png&quot; title=&quot;Abstract ER Problem&quot;&gt;&lt;img src=&quot;/images/problem_statement.png&quot; alt=&quot;Abstract ER Problem&quot; title=&quot;Abstract ER Problem&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/problem_statement.png&quot; title=&quot;Abstract ER Problem&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/problem_statement.png&quot; alt=&quot;Abstract ER Problem&quot; title=&quot;Abstract ER Problem&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Deduplication&lt;/strong&gt;: the task of clustering the records or mentions that
 correspond to the same entity. There is an intensional variant of this
@@ -285,7 +286,7 @@ comparing mentions within cities reduces the comparison space to the more
 managable &lt;em&gt;1 billion&lt;/em&gt; comparisions, which takes only 16 minutes at the same
 rate.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/blocking.png&quot; title=&quot;Blocking Heuristic&quot;&gt;&lt;img src=&quot;/images/blocking.png&quot; alt=&quot;Blocking Heuristic&quot; title=&quot;Blocking Heuristic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/blocking.png&quot; title=&quot;Blocking Heuristic&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/blocking.png&quot; alt=&quot;Blocking Heuristic&quot; title=&quot;Blocking Heuristic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Although some matches can be missed using blocking techniques, the key is
 to select a blocking algorithm that minimizes the subtraction of the set
@@ -306,7 +307,7 @@ long as the set M is not empty. This approach is interesting because
 mentions can be included in more than one canopy, and therefore reduces the
 chance that the blocking method excludes an actual match.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/images/canopy.png&quot; title=&quot;Canopy Clustering&quot;&gt;&lt;img src=&quot;/images/canopy.png&quot; alt=&quot;Canopy Clustering&quot; title=&quot;Canopy Clustering&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/canopy.png&quot; title=&quot;Canopy Clustering&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/canopy.png&quot; alt=&quot;Canopy Clustering&quot; title=&quot;Canopy Clustering&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Distributed ER&lt;/strong&gt;: The MapReduce framework is very popular for large,
 parallel tasks and there are several open source frameworks related to
@@ -341,7 +342,7 @@ performance.&lt;/p&gt;
 Machanavajjhala for their Tutorial entitled &lt;em&gt;Entity Resolution for Big Data&lt;/em&gt;,
 accepted at KDD 2013 in Chicago, Il.&lt;/p&gt;
 
-&lt;p&gt;Cobrain employees can find the complete tutorial slides at:
+&lt;p&gt;You can find the complete tutorial slides at:
 &lt;a href=&quot;http://www.cs.umd.edu/~getoor/Tutorials/ER_KDD2013.pdf&quot; title=&quot;Tutorial Slides&quot;&gt;http://www.cs.umd.edu/~getoor/Tutorials/ER_KDD2013.pdf&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Special thanks to Lise and Ashwin for hosting Cobrain during their

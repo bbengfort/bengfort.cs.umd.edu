@@ -28,13 +28,14 @@ share:
 Entity Resolution is becoming an important discipline in Computer Science
 and in Big Data especially with the recent release of Google's
 [Knowledge Graph][knowledge_graph] and the open [Freebase API][freebase].
-Therefore it is exceptionally timely that next week at KDD 2013, Dr. Lise
+Therefore it is exceptionally timely that last year at KDD 2013, Dr. Lise
 Getoor of the University of Maryland and Dr. Ashwin Machanavajjhala of
-Duke University are giving a tutorial on
+Duke University gave a tutorial on
 [_Entity Resolution for Big Data_][kdd_tutorial]. We were fortunate enough
 to be invited to attend a run through workshop at the Center for Scientific
 Computation and Mathematical Modeling at College Park, and wanted to
-highlight some of the key points for those unable to attend.
+highlight some of the key points for those unable to attend. This post has
+been reposted from other sources.
 
 <!--more-->
 
@@ -323,19 +324,19 @@ This has been a summary of the work done by Dr. Lise Getoor and Dr. Ashwin
 Machanavajjhala for their Tutorial entitled _Entity Resolution for Big Data_,
 accepted at KDD 2013 in Chicago, Il.
 
-Cobrain employees can find the complete tutorial slides at:
+You can find the complete tutorial slides at:
 [http://www.cs.umd.edu/~getoor/Tutorials/ER_KDD2013.pdf][slides]
 
 Special thanks to Lise and Ashwin for hosting Cobrain during their
 run-through of the presentation.
 
-[big_data_er]: /images/big_data_er.png "Challenges in Big Data for ER (Massive Graph)"
+[big_data_er]: {{ site.url }}/images/big_data_er.png "Challenges in Big Data for ER (Massive Graph)"
 [knowledge_graph]: http://www.google.com/insidesearch/features/search/knowledge.html "Google's Knowledge Graph"
 [freebase]: http://www.freebase.com/ "The Freebase API"
 [kdd_tutorial]: http://www.kdd.org/kdd2013/accepted-tutorials "Accepted Tutorials at KDD 2013"
-[network_resolution]: /images/network_resolution.png "Network Resolution"
+[network_resolution]: {{ site.url }}/images/network_resolution.png "Network Resolution"
 [ddupe]: http://www.cs.umd.edu/projects/linqs/ddupe/ "D-Dupe: Interactive Data Deduplication"
-[problem_statement]: /images/problem_statement.png "Abstract ER Problem"
-[blocking]: /images/blocking.png "Blocking Heuristic"
-[canopy]: /images/canopy.png "Canopy Clustering"
+[problem_statement]: {{ site.url }}/images/problem_statement.png "Abstract ER Problem"
+[blocking]: {{ site.url }}/images/blocking.png "Blocking Heuristic"
+[canopy]: {{ site.url }}/images/canopy.png "Canopy Clustering"
 [slides]: http://www.cs.umd.edu/~getoor/Tutorials/ER_KDD2013.pdf "Tutorial Slides"
