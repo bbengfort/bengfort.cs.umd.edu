@@ -5,13 +5,51 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.cs.umd.edu/~bengfort/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort" />
-<updated>2014-03-10T10:15:55-04:00</updated>
+<updated>2014-11-20T10:22:03-05:00</updated>
 <id>http://www.cs.umd.edu/~bengfort/</id>
 <author>
   <name>Benjamin Bengfort</name>
   <uri>http://www.cs.umd.edu/~bengfort/</uri>
   <email>bengfort@cs.umd.edu</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Scientific Reading]]></title>
+  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/thoughts/scientific-reading/" />
+  <id>http://www.cs.umd.edu/~bengfort/thoughts/scientific-reading</id>
+  <published>2014-11-20T00:00:00-05:00</published>
+  <updated>2014-11-20T00:00:00-05:00</updated>
+  <author>
+    <name>Benjamin Bengfort</name>
+    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <email>bengfort@cs.umd.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Managing the reading of scientific papers is a challenge that most graduate students face because, let’s face it, scientific papers are tough to read. I would say that the first year of graduate school for me was an exercise not in learning how to do research or even higher order computer science principles but rather how to decipher academic papers (generally, not just in a single discipline). I’m still not sure that I’m an expert in reading these types of papers, but I am far more comfortable cracking open a paper and reading it than I was before; and importantly, I’m much faster at reading these papers than when I started. &lt;/p&gt;
+
+&lt;p&gt;Reading is the first step; comprehension is the second, especially when the papers are required to directly inform what you’re thinking either for simple research papers, for coursework, or so that you can come up with new ideas. When I learned to read, I was trained in simple exercises in reading comprehension (read a passage, respond to questions). Unfortunately, narrative reading comprehension is not the same as scientific comprehension because critical evaluations of academic papers only partially use fact based extraction. &lt;/p&gt;
+
+&lt;p&gt;Consider if you were reading &lt;em&gt;Philosophiæ Naturalis Principia Mathematica&lt;/em&gt; (one of the first scientific papers although only cited 1,750 times according to &lt;a href=&quot;http://scholar.google.com/scholar?cites=14485044281113753117&amp;amp;as_sdt=20000005&amp;amp;sciodt=0,21&amp;amp;hl=en&quot;&gt;Google Scholar&lt;/a&gt;), comprehension questions such as “What is the inverse square law?” only reveal partial understanding of the text. Better questions would allow you to elucidate why the &lt;em&gt;Principia&lt;/em&gt; is important, what work it evolved from, and what future work is required as a basis. For example, it’s important because it demonstrates a new mathematical technique that we call calculus, and uses the calculus methodology to demonstrate a precise method for computing elliptical motion around the sun, thereby proving the existence of a gravitational force. A heliocentric model of the solar system, as well as work in optics, and the discovery of the inverse square law were crucial prior work. Finally, important future work involves discovering the medium through which gravity is transferred and why celestial bodies at great distances experience the instantaneous effects of gravity. &lt;/p&gt;
+
+&lt;p&gt;Frankly, that level of comprehension is provided to me through the benefit of nearly 400 years of reading comprehension with apologetic discourse. You don’t get nearly the same thing with papers written in the last 7 years, reviewed most likely by graduate students who weren’t willing or able to give a high level of scrutiny during the peer reviw process. You might also think that in computer science there would be software to review and execute; but this is also simply not true. Very often code and data are not provided to repeat experiments in a meaningful way. We are left requring a mechanism to critically evaluate text. &lt;/p&gt;
+
+&lt;p&gt;This semester I’m taking a class with &lt;a href=&quot;http://kelehers.me/pete/&quot;&gt;Pete Keleher&lt;/a&gt;, and as part of the course we are reading papers related to the subject matter (distributed storage systems). Dr. Keleher is having us write blog posts on every paper as part of our course participation grade, and in these blog posts, we are asked to comment on or discuss the following:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;What is the problem that the paper is attempting to address?&lt;/li&gt;
+  &lt;li&gt;What is innovative about this paper, or what is the contribution?&lt;/li&gt;
+  &lt;li&gt;Critically evaluate the paper with both positive and negative comments. &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Over the course of the semester, I’ve discovered that this simple methodology of writing 500 words or so commenting on the paper in that fashion has led to a better reading comprehension on my part. Not only that, I’ve become faster at reading papers, because now I’m reading to answer these specific questions, but not only answer the questions - but comment on them and write about it in a coherent way. I’m finding that I’m doing a first pass read of the paper at a deeper than skimming level to get a feel for the organization, the topics, and any critical knowledge required. After that, I do a Google search for the topic, or review the bibliography for any linked knowledge I can add (which was tough when I first started, but now I’m able to recognize links to common systems). Finally- I start to write, and as I write, I dive back into the paper to read or understand critical concepts that are part of my elucidation of the three points above. &lt;/p&gt;
+
+&lt;p&gt;Needless to say, this seems like an extremely good habit to continue with as much reading as I can possibly get away with; and this blog seems like a perfect forum to publish my thoughts on other papers. And I’m hoping to make this a regular habit here. So stay tuned for more. &lt;/p&gt;
+
+&lt;p&gt;This methodology is addressing another problem  I have as well: organization. Currently, I use &lt;a href=&quot;https://www.zotero.org/&quot;&gt;Zotero&lt;/a&gt; and &lt;a href=&quot;http://www.papershipapp.com/&quot;&gt;Papership&lt;/a&gt; to organize my research and reading. Once I get into a paper, I create a “reading list” of citations along with their abstracts; then some notes about their importance to the work I’m doing. Using the “blog post reading” methodology, I will have all of the pieces prior to the paper writing, pre-organized for my benefit. I beieve that this process will be effective to making me a better scientist, and a better writer; and will update you as I go on! The first paper that I will experiment on will be a paper on diversity in Computer Science that has been sent around the department. It seems like an excellent starting place before getting into papers that are related to my research!&lt;/p&gt;
+
+
+  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/thoughts/scientific-reading/&quot;&gt;Scientific Reading&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 20, 2014.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -26,20 +64,7 @@
     <uri>http://www.cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
-  <content type="html">&lt;style&gt;
-    article img {
-        margin: 28px auto;
-        padding: 0;
-        text-align: center;
-    }
-    a.image-popup {
-        width: 100%;
-    }
-&lt;/style&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/big_data_er.png&quot; title=&quot;Challenges in Big Data for ER (Massive Graph)&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/big_data_er.png&quot; alt=&quot;Challenges in Big Data for ER&quot; title=&quot;Challenges in Big Data for ER (Massive Graph)&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Entity Resolution is becoming an important discipline in Computer Science
+  <content type="html">&lt;p&gt;Entity Resolution is becoming an important discipline in Computer Science
 and in Big Data especially with the recent release of Google’s
 &lt;a href=&quot;http://www.google.com/insidesearch/features/search/knowledge.html&quot; title=&quot;Google&#39;s Knowledge Graph&quot;&gt;Knowledge Graph&lt;/a&gt; and the open &lt;a href=&quot;http://www.freebase.com/&quot; title=&quot;The Freebase API&quot;&gt;Freebase API&lt;/a&gt;.
 Therefore it is exceptionally timely that last year at KDD 2013, Dr. Lise
@@ -50,6 +75,17 @@ to be invited to attend a run through workshop at the Center for Scientific
 Computation and Mathematical Modeling at College Park, and wanted to
 highlight some of the key points for those unable to attend. This post has
 been reposted from other sources.&lt;/p&gt;
+
+&lt;style&gt;
+    article img {
+        margin: 28px auto;
+        padding: 0;
+        text-align: center;
+    }
+    a.image-popup {
+        width: 100%;
+    }
+&lt;/style&gt;
 
 &lt;!--more--&gt;
 
@@ -402,9 +438,7 @@ run-through of the presentation.&lt;/p&gt;
     <uri>http://www.cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
-  <content type="html">&lt;hr /&gt;
-
-&lt;p&gt;Hi, I’m Ben. Today, for the fourth time, I’m starting over on my PhD. I’ve
+  <content type="html">&lt;p&gt;Hi, I’m Ben. Today, for the fourth time, I’m starting over on my PhD. I’ve
 moved into my office in A.V. Williams, and I’m feeling like a veteran
 entering an extended tour. But I’m here, I’m ready to work, so let’s get
 researching!&lt;/p&gt;

@@ -5,25 +5,12 @@ modified: 2014-03-10 09:57:07 -0400
 tags: [entity resolution, big data, calustering]
 category: tutorials
 image:
-#  feature:
-#  credit:
-#  creditlink:
+    feature: big_data_er_slice.png
+    credit: Anja Jentzsch (Wikimedia Commons)
+    creditlink: http://en.wikipedia.org/wiki/Linked_data
 comments:
 share:
 ---
-
-<style>
-    article img {
-        margin: 28px auto;
-        padding: 0;
-        text-align: center;
-    }
-    a.image-popup {
-        width: 100%;
-    }
-</style>
-
-[![Challenges in Big Data for ER][big_data_er]][big_data_er]
 
 Entity Resolution is becoming an important discipline in Computer Science
 and in Big Data especially with the recent release of Google's
@@ -36,6 +23,17 @@ to be invited to attend a run through workshop at the Center for Scientific
 Computation and Mathematical Modeling at College Park, and wanted to
 highlight some of the key points for those unable to attend. This post has
 been reposted from other sources.
+
+<style>
+    article img {
+        margin: 28px auto;
+        padding: 0;
+        text-align: center;
+    }
+    a.image-popup {
+        width: 100%;
+    }
+</style>
 
 <!--more-->
 
