@@ -5,13 +5,42 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://www.cs.umd.edu/~bengfort/feed.xml" />
 <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort" />
-<updated>2014-11-30T15:22:08-05:00</updated>
+<updated>2015-02-04T00:13:07-05:00</updated>
 <id>http://www.cs.umd.edu/~bengfort/</id>
 <author>
   <name>Benjamin Bengfort</name>
   <uri>http://www.cs.umd.edu/~bengfort/</uri>
   <email>bengfort@cs.umd.edu</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Getting Started with Spark (in Python)]]></title>
+  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/" />
+  <id>http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark</id>
+  <published>2015-02-02T00:00:00-05:00</published>
+  <updated>2015-02-02T00:00:00-05:00</updated>
+  <author>
+    <name>Benjamin Bengfort</name>
+    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <email>bengfort@cs.umd.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Hadoop is the standard tool for distributed computing across really large data sets and is the reason why you see “Big Data” on advertisements as you walk through the airport. It has become an operating system for Big Data, providing a rich ecosystem of tools and techniques that allow you to use a large cluster of relatively cheap commodity hardware to do computing at supercomputer scale. Two ideas from Google in 2003 and 2004 made Hadoop possible: a framework for distributed storage (The Google File System), which is implemented as HDFS in Hadoop, and a framework for distributed computing (MapReduce).&lt;/p&gt;
+
+&lt;p&gt;These two ideas have been the prime drivers for the advent of scaling analytics, large scale machine learning, and other big data appliances for the last ten years! However, in technology terms, ten years is an incredibly long time, and there are some well-known limitations that exist, with MapReduce in particular. Notably, programming MapReduce is difficult. You have to chain Map and Reduce tasks together in multiple steps for most analytics. This has resulted in specialized systems for performing SQL-like computations or machine learning. Worse, MapReduce requires data to be serialized to disk between each step, which means that the I/O cost of a MapReduce job is high, making interactive analysis and iterative algorithms very expensive; and the thing is, almost all optimization and machine learning is iterative.&lt;/p&gt;
+
+&lt;p&gt;To address these problems, Hadoop has been moving to a more general resource management framework for computation, YARN (Yet Another Resource Negotiator). YARN implements the next generation of MapReduce, but also allows applications to leverage distributed resources without having to compute with MapReduce. By generalizing the management of the cluster, research has moved toward generalizations of distributed computation, expanding the ideas first imagined in MapReduce.&lt;/p&gt;
+
+&lt;p&gt;Spark is the first fast, general purpose distributed computing paradigm resulting from this shift and is gaining popularity rapidly. Spark extends the MapReduce model to support more types of computations using a functional programming paradigm, and it can cover a wide range of workflows that previously were implemented as specialized systems built on top of Hadoop. Spark uses in-memory caching to improve performance and, therefore, is fast enough to allow for interactive analysis (as though you were sitting on the Python interpreter, interacting with the cluster). Caching also improves the performance of iterative algorithms, which makes it great for data theoretic tasks, especially machine learning.&lt;/p&gt;
+
+&lt;p&gt;In this post we will first discuss how to set up Spark to start easily performing analytics, either simply on your local machine or in a cluster on EC2. We then will explore Spark at an introductory level, moving towards an understanding of what Spark is and how it works (hopefully motivating further exploration). In the last two sections we will start to interact with Spark on the command line and then demo how to write a Spark application in Python and submit it to the cluster as a Spark job.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/getting-started-with-spark-in-python&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/&quot;&gt;Getting Started with Spark (in Python)&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on February 02, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
@@ -139,6 +168,112 @@
 &lt;p&gt;This methodology is addressing another problem  I have as well: organization. Currently, I use &lt;a href=&quot;https://www.zotero.org/&quot;&gt;Zotero&lt;/a&gt; and &lt;a href=&quot;http://www.papershipapp.com/&quot;&gt;Papership&lt;/a&gt; to organize my research and reading. Once I get into a paper, I create a “reading list” of citations along with their abstracts; then some notes about their importance to the work I’m doing. Using the “blog post reading” methodology, I will have all of the pieces prior to the paper writing, pre-organized for my benefit. I believe that this process will be effective to making me a better scientist, and a better writer; and will update you as I go on! The first paper that I will experiment on will be a paper on diversity in Computer Science that has been sent around the department. It seems like an excellent starting place before getting into papers that are related to my research!&lt;/p&gt;
 
   &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/thoughts/scientific-reading/&quot;&gt;Scientific Reading&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 20, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Simple CSV Data Wrangling with Python]]></title>
+  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/" />
+  <id>http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python</id>
+  <published>2014-11-08T00:00:00-05:00</published>
+  <updated>2014-11-08T00:00:00-05:00</updated>
+  <author>
+    <name>Benjamin Bengfort</name>
+    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <email>bengfort@cs.umd.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;I wanted to write a quick post today about a task that most of us do routinely but often think very little about - loading CSV (comma-separated value) data into Python. This simple action has a variety of obstacles that need to be overcome due to the nature of serialization and data transfer. In fact, I’m routinely surprised how often I have to jump through hoops to deal with this type of data, when it feels like it should be as easy as JSON or other serialization formats.&lt;/p&gt;
+
+&lt;p&gt;The basic problem is this: CSVs have inherent schemas. In fact, most of the CSVs that I work with are dumps from a database. While the database can maintain schema information alongside the data, the scheme is lost when serializing to disk. Worse, if the dump is denormalized (a join of two tables), then the relationships are also lost, making it harder to extract entities. Although a header row can give us the names of the fields in the file, it won’t give us the type, and there is nothing structural about the serialization format (like there is with JSON) that we can infer the type from.&lt;/p&gt;
+
+&lt;p&gt;That said, I love CSVs. CSVs are a compact data format - one row, one record. CSVs can be grown to massive sizes without cause for concern. I don’t flinch when reading 4 GB CSV files with Python because they can be split into multiple files, read one row at a time for memory efficiency, and multiprocessed with seeks to speed up the job. This is in stark contrast to JSON or XML, which have to be read completely from end to end in order to get the full data (JSON has to be completely loaded into memory and with XML you have to use a streaming parser like SAX).&lt;/p&gt;
+
+&lt;p&gt;CSVs are the file format of choice for big data appliances like Hadoop for good reason. If you can get past encoding issues, extra dependencies, schema inference, and typing; CSVs are a great serialization format. In this post, I will provide you with a series of pro tips that I have discovered for using and wrangling CSV data.&lt;/p&gt;
+
+&lt;p&gt;Specifically, this post will cover the following:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The basics of CSV processing with Python&lt;/li&gt;
+  &lt;li&gt;Avoiding Unicode issues in Python 2.7&lt;/li&gt;
+  &lt;li&gt;Using namedtuples or slots for memory efficiency&lt;/li&gt;
+  &lt;li&gt;Serializing data with a schema using Avro&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Although we won’t cover it in this post, using these techniques you have a great start towards multiprocessing to quickly dig through a CSV file from many different positions in it at once. Hopefully this intro has made CSV sound more exciting, and so let’s dive in.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/simple-csv-data-wrangling-with-python&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/&quot;&gt;Simple CSV Data Wrangling with Python&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 08, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[Computing a Bayesian Estimate of Star Rating Means]]></title>
+  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means/" />
+  <id>http://www.cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means</id>
+  <published>2014-09-11T00:00:00-04:00</published>
+  <updated>2014-09-11T00:00:00-04:00</updated>
+  <author>
+    <name>Benjamin Bengfort</name>
+    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <email>bengfort@cs.umd.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Consumers rely on the collective intelligence of other consumers to protect themselves from coffee pots that break at the first sign of water, eating bad food at the wrong restaurant, and stunning flops at the theater. Although occasionally there are metrics like Rotten Tomatoes, we primarily prejudge products we would like to consume through a simple 5 star rating. This methodology is powerful, because not only does it provide a simple, easily understandable metric, but people are generally willing to reliably cast a vote by clicking a star rating without too much angst.&lt;/p&gt;
+
+&lt;p&gt;In aggregate, this is wonderful. Star ratings can minimize individual preference because the scale is not large enough to be too nuanced. After enough ratings, it becomes pretty clear whether or not something is a hit or a flop. The problem is, however, that many ratings are needed to make this system work because the quality of a 5 star rating depends not only on the average number of stars but also on the number of reviews.&lt;/p&gt;
+
+&lt;p&gt;Consider the following two items:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Presto Coffee Pot - average rating of 5 (1 review).&lt;/li&gt;
+  &lt;li&gt;Cuisinart Brew Central - average rating of 4.1 (78 reviews).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Which item should be listed first in a list of items sorted by rating? It would seem clear that the Brew Central has more reviewers and that many of them are happy with the product. Therefore, it should probably appear before the Presto even though its average rating is lower.&lt;/p&gt;
+
+&lt;p&gt;We could brainstorm a couple of strategies that would give us this outcome and would help us deal with items that have an insufficient number of ratings when we come across them in the future:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We could simply list the number of reviews in addition to the average rating. However, this doesn’t help with sorting the products.&lt;/li&gt;
+  &lt;li&gt;We could set a floor of n number of ratings before a product is shown, but this decreases the likelihood that a product will be reviewed because it remains unseen. Not only that, but how do we choose n?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Instead, we need some empirical metric for the average rating that embeds the number of reviewers into the score. Most methodologies in use today use Bayesian estimation, which takes into account the fact that we don’t have enough data to make an estimation via the mean and also incorporates all the data we have about other observations.&lt;/p&gt;
+
+&lt;p&gt;In this post, we will consider how to implement a Bayesian estimation of the mean of star reviews with a limited number of observations. The estimation is useful for recommender services and other predictive algorithms that use preference space measures like star reviews. It is also a good crash course in Bayesian estimation in general for those that are interested.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/computing-a-bayesian-estimate-of-star-rating-means&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means/&quot;&gt;Computing a Bayesian Estimate of Star Rating Means&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on September 11, 2014.&lt;/p&gt;</content>
+</entry>
+
+
+<entry>
+  <title type="html"><![CDATA[How to Develop Quality Python Code]]></title>
+  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code/" />
+  <id>http://www.cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code</id>
+  <published>2014-08-20T00:00:00-04:00</published>
+  <updated>2014-08-20T00:00:00-04:00</updated>
+  <author>
+    <name>Benjamin Bengfort</name>
+    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <email>bengfort@cs.umd.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;Developing in Python is very different from developing in other languages. Python is an interpreted language like Ruby or Perl, so developers are able to use read-evaluate-print loops (REPLs) to execute Python in real-time. This feature of Python means that it can be used for rapid development and prototyping because there is no build process. Python includes many functional programming tools akin to Scala or Javascript to assist with closure based script development. But Python is also a fully scalable object-oriented language, a paradigm used to build large modular software rather than to simply execute scripts, more akin to Java or C++.&lt;/p&gt;
+
+&lt;p&gt;Python sits in the middle of these paradigms, providing the best of many worlds. Python is used for writing quick one-off scripts, large scale web frameworks like Django, data processing with Celery, even numerical and scientific computing. Python is lightweight, is standard on many operating systems, and is effective, thereby making it the top choice for data scientists and analysts for data engineering and analytical tasks.&lt;/p&gt;
+
+&lt;p&gt;However, the breadth of Python means that there is no one workflow to developing with it, and certainly there is no standard IDE or environment framework to make these decisions on your behalf. Most Python educational materials focus on the scripting aspects of the language, leaving out the important details of how to construct larger projects. This post will focus on the question of how a developer interacts with Python to build larger data applications.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/how-to-develop-quality-python-code&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code/&quot;&gt;How to Develop Quality Python Code&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on August 20, 2014.&lt;/p&gt;</content>
 </entry>
 
 

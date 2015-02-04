@@ -5,29 +5,30 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Getting Moved In &#8211; Benjamin Bengfort</title>
+  <title>Getting Started with Spark (in Python) &#8211; Benjamin Bengfort</title>
   <meta name="description" content="">
-  <meta name="keywords" content="news, personal">
+  <meta name="keywords" content="spark, hadoop, python, distributed systems">
   <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="http://www.cs.umd.edu/~bengfort/images/">
-  <meta name="twitter:title" content="Getting Moved In">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://www.cs.umd.edu/~bengfort/images/logo_spark_hadoop.png">
+  
+  <meta name="twitter:title" content="Getting Started with Spark (in Python)">
   <meta name="twitter:description" content="My graduate research at the University of Maryland">
   <meta name="twitter:creator" content="@bbengfort">
 
   <!-- Open Graph -->
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Getting Moved In">
+  <meta property="og:title" content="Getting Started with Spark (in Python)">
   <meta property="og:description" content="My graduate research at the University of Maryland">
-  <meta property="og:url" content="http://www.cs.umd.edu/~bengfort/news/moving-in/">
+  <meta property="og:url" content="http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/">
   <meta property="og:site_name" content="Benjamin Bengfort">
 
   
   
 
   
-  <link rel="canonical" href="http://www.cs.umd.edu/~bengfort/news/moving-in/">
+  <link rel="canonical" href="http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/">
   <link href="http://www.cs.umd.edu/~bengfort/feed.xml" type="application/atom+xml" rel="alternate" title="Benjamin Bengfort Feed">
   <link rel="author" href="https://plus.google.com/+BenjaminBengfort-DataNerd/?rel=author">
 
@@ -80,7 +81,10 @@
 	</div><!-- /.top-navigation -->
 </div><!-- /.navigation-wrapper -->
 
-
+<div class="image-wrap">
+  <img src="http://www.cs.umd.edu/~bengfort/images/logo_spark_hadoop.png" alt="Getting Started with Spark (in Python) feature image">
+  <span class="image-credit">Photo Credit: <a href="https://databricks.com/spark">Databricks</a></span>
+</div><!-- /.image-wrap -->
 
 <div id="main" role="main">
   <div class="article-author-side">
@@ -99,29 +103,23 @@
   </div>
   <article>
     <div class="headline-wrap">
-      <h1>Getting Moved In</h1>
+      <h1>Getting Started with Spark (in Python)</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p>Hi, I’m Ben. Today, for the fourth time, I’m starting over on my PhD. I’ve
-moved into my office in A.V. Williams, and I’m feeling like a veteran
-entering an extended tour. But I’m here, I’m ready to work, so let’s get
-researching!</p>
+      <p>Hadoop is the standard tool for distributed computing across really large data sets and is the reason why you see “Big Data” on advertisements as you walk through the airport. It has become an operating system for Big Data, providing a rich ecosystem of tools and techniques that allow you to use a large cluster of relatively cheap commodity hardware to do computing at supercomputer scale. Two ideas from Google in 2003 and 2004 made Hadoop possible: a framework for distributed storage (The Google File System), which is implemented as HDFS in Hadoop, and a framework for distributed computing (MapReduce).</p>
 
-<p>Also, I do Python.</p>
+<p>These two ideas have been the prime drivers for the advent of scaling analytics, large scale machine learning, and other big data appliances for the last ten years! However, in technology terms, ten years is an incredibly long time, and there are some well-known limitations that exist, with MapReduce in particular. Notably, programming MapReduce is difficult. You have to chain Map and Reduce tasks together in multiple steps for most analytics. This has resulted in specialized systems for performing SQL-like computations or machine learning. Worse, MapReduce requires data to be serialized to disk between each step, which means that the I/O cost of a MapReduce job is high, making interactive analysis and iterative algorithms very expensive; and the thing is, almost all optimization and machine learning is iterative.</p>
 
-<div class="highlight"><pre><code class="python"><span class="k">def</span> <span class="nf">fib</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">n</span>
-    <span class="k">return</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="n">fib</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<p>To address these problems, Hadoop has been moving to a more general resource management framework for computation, YARN (Yet Another Resource Negotiator). YARN implements the next generation of MapReduce, but also allows applications to leverage distributed resources without having to compute with MapReduce. By generalizing the management of the cluster, research has moved toward generalizations of distributed computation, expanding the ideas first imagined in MapReduce.</p>
 
-<span class="k">print</span> <span class="nb">map</span><span class="p">(</span><span class="n">fib</span><span class="p">,</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
-<span class="c">#=&gt; prints &#39;[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]&#39; to STDOUT.</span>
-</code></pre></div>
+<p>Spark is the first fast, general purpose distributed computing paradigm resulting from this shift and is gaining popularity rapidly. Spark extends the MapReduce model to support more types of computations using a functional programming paradigm, and it can cover a wide range of workflows that previously were implemented as specialized systems built on top of Hadoop. Spark uses in-memory caching to improve performance and, therefore, is fast enough to allow for interactive analysis (as though you were sitting on the Python interpreter, interacting with the cluster). Caching also improves the performance of iterative algorithms, which makes it great for data theoretic tasks, especially machine learning.</p>
 
-<p>I build this site with <a href="http://jekyllrb.com">Jekyll</a>, which builds the static site from
-Markdown in a repository.</p>
+<p>In this post we will first discuss how to set up Spark to start easily performing analytics, either simply on your local machine or in a cluster on EC2. We then will explore Spark at an introductory level, moving towards an understanding of what Spark is and how it works (hopefully motivating further exploration). In the last two sections we will start to interact with Spark on the command line and then demo how to write a Spark application in Python and submit it to the cluster as a Spark job.</p>
 
+<blockquote>
+  <p><a href="https://districtdatalabs.silvrback.com/getting-started-with-spark-in-python">Read the complete article at District Data Labs</a></p>
+</blockquote>
 
       <hr />
       <footer role="contentinfo">
@@ -139,7 +137,7 @@ Markdown in a repository.</p>
 
 
         </div>
-        <p class="byline"><strong>Getting Moved In</strong> was published on <time datetime="2014-01-16T19:59:24Z">January 16, 2014</time> by <a href="http://www.cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
+        <p class="byline"><strong>Getting Started with Spark (in Python)</strong> was published on <time datetime="2015-02-02T00:00:00-05:00">February 02, 2015</time> by <a href="http://www.cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
         
         </p>
       </footer>

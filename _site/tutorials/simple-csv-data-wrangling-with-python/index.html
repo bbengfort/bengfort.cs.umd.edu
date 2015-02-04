@@ -5,29 +5,29 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>The Google File System &#8211; Benjamin Bengfort</title>
+  <title>Simple CSV Data Wrangling with Python &#8211; Benjamin Bengfort</title>
   <meta name="description" content="">
-  <meta name="keywords" content="gfs, distributed systems, papers, google, hadoop">
+  <meta name="keywords" content="csv, data wrangling, python, avro">
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://www.cs.umd.edu/~bengfort/images/">
-  <meta name="twitter:title" content="The Google File System">
+  <meta name="twitter:title" content="Simple CSV Data Wrangling with Python">
   <meta name="twitter:description" content="My graduate research at the University of Maryland">
   <meta name="twitter:creator" content="@bbengfort">
 
   <!-- Open Graph -->
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="The Google File System">
+  <meta property="og:title" content="Simple CSV Data Wrangling with Python">
   <meta property="og:description" content="My graduate research at the University of Maryland">
-  <meta property="og:url" content="http://www.cs.umd.edu/~bengfort/scientific-reading/the-google-file-system/">
+  <meta property="og:url" content="http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/">
   <meta property="og:site_name" content="Benjamin Bengfort">
 
   
   
 
   
-  <link rel="canonical" href="http://www.cs.umd.edu/~bengfort/scientific-reading/the-google-file-system/">
+  <link rel="canonical" href="http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/">
   <link href="http://www.cs.umd.edu/~bengfort/feed.xml" type="application/atom+xml" rel="alternate" title="Benjamin Bengfort Feed">
   <link rel="author" href="https://plus.google.com/+BenjaminBengfort-DataNerd/?rel=author">
 
@@ -99,35 +99,32 @@
   </div>
   <article>
     <div class="headline-wrap">
-      <h1>The Google File System</h1>
+      <h1>Simple CSV Data Wrangling with Python</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <blockquote>
-  <p>S. Ghemawat, H. Gobioff, and S.-T. Leung, “The Google file system,” in ACM SIGOPS Operating Systems Review, 2003, vol. 37, pp. 29–43.</p>
+      <p>I wanted to write a quick post today about a task that most of us do routinely but often think very little about - loading CSV (comma-separated value) data into Python. This simple action has a variety of obstacles that need to be overcome due to the nature of serialization and data transfer. In fact, I’m routinely surprised how often I have to jump through hoops to deal with this type of data, when it feels like it should be as easy as JSON or other serialization formats.</p>
+
+<p>The basic problem is this: CSVs have inherent schemas. In fact, most of the CSVs that I work with are dumps from a database. While the database can maintain schema information alongside the data, the scheme is lost when serializing to disk. Worse, if the dump is denormalized (a join of two tables), then the relationships are also lost, making it harder to extract entities. Although a header row can give us the names of the fields in the file, it won’t give us the type, and there is nothing structural about the serialization format (like there is with JSON) that we can infer the type from.</p>
+
+<p>That said, I love CSVs. CSVs are a compact data format - one row, one record. CSVs can be grown to massive sizes without cause for concern. I don’t flinch when reading 4 GB CSV files with Python because they can be split into multiple files, read one row at a time for memory efficiency, and multiprocessed with seeks to speed up the job. This is in stark contrast to JSON or XML, which have to be read completely from end to end in order to get the full data (JSON has to be completely loaded into memory and with XML you have to use a streaming parser like SAX).</p>
+
+<p>CSVs are the file format of choice for big data appliances like Hadoop for good reason. If you can get past encoding issues, extra dependencies, schema inference, and typing; CSVs are a great serialization format. In this post, I will provide you with a series of pro tips that I have discovered for using and wrangling CSV data.</p>
+
+<p>Specifically, this post will cover the following:</p>
+
+<ul>
+  <li>The basics of CSV processing with Python</li>
+  <li>Avoiding Unicode issues in Python 2.7</li>
+  <li>Using namedtuples or slots for memory efficiency</li>
+  <li>Serializing data with a schema using Avro</li>
+</ul>
+
+<p>Although we won’t cover it in this post, using these techniques you have a great start towards multiprocessing to quickly dig through a CSV file from many different positions in it at once. Hopefully this intro has made CSV sound more exciting, and so let’s dive in.</p>
+
+<blockquote>
+  <p><a href="https://districtdatalabs.silvrback.com/simple-csv-data-wrangling-with-python">Read the complete article at District Data Labs</a></p>
 </blockquote>
-
-<h2 id="abstract">Abstract</h2>
-
-<p><small>We have designed and implemented the Google File System, a scalable distributed file system for large distributed data-intensive applications. It provides fault tolerance while running on inexpensive commodity hardware, and it delivers high aggregate performance to a large number of clients.</small></p>
-
-<p><small>While sharing many of the same goals as previous distributed file systems, our design has been driven by obser- vations of our application workloads and technological environment, both current and anticipated, that reflect a marked departure from some earlier file system assumptions. This has led us to reexamine traditional choices and explore radically different design points.</small></p>
-
-<p><small>The file system has successfully met our storage needs. It is widely deployed within Google as the storage platform for the generation and processing of data used by our service as well as research and development efforts that require large data sets. The largest cluster to date provides hundreds of terabytes of storage across thousands of disks on over a thousand machines, and it is concurrently accessed by hundreds of clients.</small></p>
-
-<p><small>In this paper, we present file system interface extensions designed to support distributed applications, discuss many aspects of our design, and report measurements from both micro-benchmarks and real world use.</small></p>
-
-<h2 id="critical-reading">Critical Reading</h2>
-
-<p>GFS is an application-optimized distributed file system that was designed with Google’s requirements in mind. In particular, Google needed a replicated, highly-available system that prioritized streaming reads over random access and block writes or appends over random writes or overwrites. This makes perfect sense - Google’s production systems are storing entire websites as a single file, which are written as the site is being crawled (in big blocks or via appends). Computing page rank or doing other tasks requires the extraction of links or parsing of an XML file, which uses streaming reads to fetch the data. Logging and other crucial disk bound operations at Google are also append-oriented.</p>
-
-<p>The motto of Google’s solution seems to be <em>simplicity</em> - and for this reason a centralized master server is used to coordinate with chunk servers that reside on many commodity machines. The Master server only handles file meta data and acts as a traffic controller to clients who want data; it does not stand pose a bottle neck to data transfer. The chunk servers themselves are simply a software layer on top of the file system of the machine; meaning that data eventually will be passed to whatever filesystem exists under GFS (and Google did report some problems with the Linux file system particularly performance woes from <code>fsync</code> and <code>mmap</code>). Checksums for data integrity, chunkserver selection, garbage collection, recovery, heartbeats - all of the design choices that Google made in GFS is to simplify the distributed system for the types of applications that Google uses most often.</p>
-
-<p>The result of this simplicity is the key innovation of this paper: the ability to use commodity hardware to provide production level distributed systems. If disks and machines are expected to fail, it is far better (and cheaper) to replace them with economically viable machines - allowing for <em>horizontal</em> scaling; the more machines, the more capacity. There is no need for RAID or other expensive hardware because the filesystem replicates. And, extremely importantly - the data is where you will do the computation in the cluster, thus moving data off the disk to where the computation happens doesn’t require network overhead.</p>
-
-<p>It turns out that modern data appliances, especially those with terabytes of data, benefit from this distributed data storage model; especially when there is a distributed programming framework that also optimizes the storage model. Combined with another paper - <em>MapReduce: Simplified Data Processing on Large Clusters</em> - GFS became the foundation for Big Data as we know it; and this paper was eventually implemented as HDFS in Hadoop. Chunks in the GFS are perfect inputs to Mapping processes, as each mapper can be run on every node in the cluster. Functional Mappers take a list of inputs as an argument and apply a function to every input value. In append-optimized systems chunks of data are therefore lists of inputs.</p>
-
-<p>To the critique: there is a clear bottleneck in GFS, the Master server. This server has to be smart not only about chunk allocation, but also has to handle heartbeats, read and write requests and store metadata in memory. Although it does checkpoint itself to disk and have read-only shadow backups it is a central point of failure for the cluster. Worse, the master cannot handle many small files - it is optimized for files that are 64 MB or larger. Storing the meta data for billions of small files would eat up the memory on the server which can only vertically scale. Additionally because of the 64 MB chunks, there will be some storage loss for files that do not completely use up the chunk.</p>
 
       <hr />
       <footer role="contentinfo">
@@ -145,7 +142,7 @@
 
 
         </div>
-        <p class="byline"><strong>The Google File System</strong> was published on <time datetime="2014-11-21T00:00:00-05:00">November 21, 2014</time> by <a href="http://www.cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
+        <p class="byline"><strong>Simple CSV Data Wrangling with Python</strong> was published on <time datetime="2014-11-08T00:00:00-05:00">November 08, 2014</time> by <a href="http://www.cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
         
         </p>
       </footer>
@@ -161,17 +158,17 @@
       
       
         
+          
+        
       
+      
+      <li><a href="http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/" title="Getting Started with Spark (in Python)">Getting Started with Spark (in Python)</a></li>
       
     
       
       
         
-          
-        
       
-      
-      <li><a href="http://www.cs.umd.edu/~bengfort/scientific-reading/spanner/" title="Spanner: Google's Globally Distributed Database">Spanner: Google's Globally Distributed Database</a></li>
       
     
       
