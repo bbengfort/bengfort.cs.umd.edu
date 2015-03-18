@@ -3,29 +3,29 @@
 <title type="text">Benjamin Bengfort</title>
 <subtitle type="text">A graduate research assistant in Computer Science at UMD</subtitle>
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
-<link rel="self" type="application/atom+xml" href="http://www.cs.umd.edu/~bengfort/feed.xml" />
-<link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort" />
-<updated>2015-03-03T13:07:16-05:00</updated>
-<id>http://www.cs.umd.edu/~bengfort/</id>
+<link rel="self" type="application/atom+xml" href="http://cs.umd.edu/~bengfort/feed.xml" />
+<link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort" />
+<updated>2015-03-18T15:09:28-04:00</updated>
+<id>http://cs.umd.edu/~bengfort/</id>
 <author>
   <name>Benjamin Bengfort</name>
-  <uri>http://www.cs.umd.edu/~bengfort/</uri>
+  <uri>http://cs.umd.edu/~bengfort/</uri>
   <email>bengfort@cs.umd.edu</email>
 </author>
 
 
 <entry>
   <title type="html"><![CDATA[Analyzing Response to Vehicular Incidents with Tableau]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/thoughts/analyzing-response-to-vehicular-incidents-with-tableau/" />
-  <id>http://www.cs.umd.edu/~bengfort/thoughts/analyzing-response-to-vehicular-incidents-with-tableau</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/thoughts/analyzing-response-to-vehicular-incidents-with-tableau/" />
+  <id>http://cs.umd.edu/~bengfort/thoughts/analyzing-response-to-vehicular-incidents-with-tableau</id>
   <published>2015-03-02T00:00:00-05:00</published>
   <updated>2015-03-02T00:00:00-05:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
-  <content type="html">&lt;p&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/dashboard.png&quot; alt=&quot;Tableau Dashboard of Traffic Incidents&quot; /&gt;&lt;/p&gt;
+  <content type="html">&lt;p&gt;&lt;img src=&quot;http://cs.umd.edu/~bengfort/images/dashboard.png&quot; alt=&quot;Tableau Dashboard of Traffic Incidents&quot; /&gt;&lt;/p&gt;
 
 &lt;p style=&quot;text-align:center; padding-bottom:18px;&quot;&gt;
     &lt;strong&gt;&lt;small&gt;Tableau Dashboard Visualizing Traffic Incidents&lt;/small&gt;&lt;/strong&gt;
@@ -56,24 +56,24 @@ prepare for future events.&lt;/p&gt;
 
 &lt;p&gt;…&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Read the full article&lt;/strong&gt;: &lt;a href=&quot;http://www.cs.umd.edu/~bengfort/papers/analyzing-response-vehicular.pdf&quot;&gt;Analyzing Response to Vehicular Incidents with Tableau&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Read the full article&lt;/strong&gt;: &lt;a href=&quot;http://cs.umd.edu/~bengfort/papers/analyzing-response-vehicular.pdf&quot;&gt;Analyzing Response to Vehicular Incidents with Tableau&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/thoughts/analyzing-response-to-vehicular-incidents-with-tableau/&quot;&gt;Analyzing Response to Vehicular Incidents with Tableau&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on March 02, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/thoughts/analyzing-response-to-vehicular-incidents-with-tableau/&quot;&gt;Analyzing Response to Vehicular Incidents with Tableau&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on March 02, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Baxter Robots are Learning to Think, See, and Cook]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/thoughts/baxter-robots-are-learning-to-think-see-and-read/" />
-  <id>http://www.cs.umd.edu/~bengfort/thoughts/baxter-robots-are-learning-to-think-see-and-read</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/thoughts/baxter-robots-are-learning-to-think-see-and-read/" />
+  <id>http://cs.umd.edu/~bengfort/thoughts/baxter-robots-are-learning-to-think-see-and-read</id>
   <published>2015-02-26T00:00:00-05:00</published>
   <updated>2015-02-26T00:00:00-05:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
-  <content type="html">&lt;p&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/IMG_1955.JPG&quot; alt=&quot;Researchers at the University of Maryland explore practical AI with Baxter Robots&quot; /&gt;&lt;/p&gt;
+  <content type="html">&lt;p&gt;&lt;img src=&quot;http://cs.umd.edu/~bengfort/images/IMG_1955.JPG&quot; alt=&quot;Researchers at the University of Maryland explore practical AI with Baxter Robots&quot; /&gt;&lt;/p&gt;
 
 &lt;p style=&quot;text-align:center; padding-bottom:18px;&quot;&gt;
     &lt;strong&gt;&lt;small&gt;Researchers at the University of Maryland explore practical AI with Baxter Robots&lt;/small&gt;&lt;/strong&gt;
@@ -85,21 +85,21 @@ prepare for future events.&lt;/p&gt;
 
 &lt;p&gt;…&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Read the full article&lt;/strong&gt;: &lt;a href=&quot;http://www.cs.umd.edu/~bengfort/papers/baxter-robots-learning.pdf&quot;&gt;Baxter Robots are Learning to Think, See, and Cook&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Read the full article&lt;/strong&gt;: &lt;a href=&quot;http://cs.umd.edu/~bengfort/papers/baxter-robots-learning.pdf&quot;&gt;Baxter Robots are Learning to Think, See, and Cook&lt;/a&gt;&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/thoughts/baxter-robots-are-learning-to-think-see-and-read/&quot;&gt;Baxter Robots are Learning to Think, See, and Cook&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on February 26, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/thoughts/baxter-robots-are-learning-to-think-see-and-read/&quot;&gt;Baxter Robots are Learning to Think, See, and Cook&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on February 26, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Getting Started with Spark (in Python)]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/" />
-  <id>http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/" />
+  <id>http://cs.umd.edu/~bengfort/tutorials/getting-started-with-spark</id>
   <published>2015-02-02T00:00:00-05:00</published>
   <updated>2015-02-02T00:00:00-05:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;Hadoop is the standard tool for distributed computing across really large data sets and is the reason why you see “Big Data” on advertisements as you walk through the airport. It has become an operating system for Big Data, providing a rich ecosystem of tools and techniques that allow you to use a large cluster of relatively cheap commodity hardware to do computing at supercomputer scale. Two ideas from Google in 2003 and 2004 made Hadoop possible: a framework for distributed storage (The Google File System), which is implemented as HDFS in Hadoop, and a framework for distributed computing (MapReduce).&lt;/p&gt;
@@ -116,19 +116,19 @@ prepare for future events.&lt;/p&gt;
   &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/getting-started-with-spark-in-python&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/&quot;&gt;Getting Started with Spark (in Python)&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on February 02, 2015.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/tutorials/getting-started-with-spark/&quot;&gt;Getting Started with Spark (in Python)&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on February 02, 2015.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Spanner: Google's Globally Distributed Database]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/scientific-reading/spanner/" />
-  <id>http://www.cs.umd.edu/~bengfort/scientific-reading/spanner</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/scientific-reading/spanner/" />
+  <id>http://cs.umd.edu/~bengfort/scientific-reading/spanner</id>
   <published>2014-11-28T00:00:00-05:00</published>
   <updated>2014-11-28T00:00:00-05:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;blockquote&gt;
@@ -166,19 +166,19 @@ prepare for future events.&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/BenjaminBengfort/an-overview-of-spanner-googles-globally-distributed-database&quot;&gt;CSMC 818E Presentation Slides&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/scientific-reading/spanner/&quot;&gt;Spanner: Google's Globally Distributed Database&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 28, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/scientific-reading/spanner/&quot;&gt;Spanner: Google's Globally Distributed Database&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 28, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[The Google File System]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/scientific-reading/the-google-file-system/" />
-  <id>http://www.cs.umd.edu/~bengfort/scientific-reading/the-google-file-system</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/scientific-reading/the-google-file-system/" />
+  <id>http://cs.umd.edu/~bengfort/scientific-reading/the-google-file-system</id>
   <published>2014-11-21T00:00:00-05:00</published>
   <updated>2014-11-21T00:00:00-05:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;blockquote&gt;
@@ -207,19 +207,19 @@ prepare for future events.&lt;/p&gt;
 
 &lt;p&gt;To the critique: there is a clear bottleneck in GFS, the Master server. This server has to be smart not only about chunk allocation, but also has to handle heartbeats, read and write requests and store metadata in memory. Although it does checkpoint itself to disk and have read-only shadow backups it is a central point of failure for the cluster. Worse, the master cannot handle many small files - it is optimized for files that are 64 MB or larger. Storing the meta data for billions of small files would eat up the memory on the server which can only vertically scale. Additionally because of the 64 MB chunks, there will be some storage loss for files that do not completely use up the chunk.&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/scientific-reading/the-google-file-system/&quot;&gt;The Google File System&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 21, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/scientific-reading/the-google-file-system/&quot;&gt;The Google File System&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 21, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Scientific Reading]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/thoughts/scientific-reading/" />
-  <id>http://www.cs.umd.edu/~bengfort/thoughts/scientific-reading</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/thoughts/scientific-reading/" />
+  <id>http://cs.umd.edu/~bengfort/thoughts/scientific-reading</id>
   <published>2014-11-20T00:00:00-05:00</published>
   <updated>2014-11-20T00:00:00-05:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;Managing the reading of scientific papers is a challenge that most graduate students face because, let’s face it, scientific papers are tough to read. I would say that the first year of graduate school for me was an exercise not in learning how to do research or even higher order computer science principles but rather how to decipher academic papers (generally, not just in a single discipline). I’m still not sure that I’m an expert in reading these types of papers, but I am far more comfortable cracking open a paper and reading it than I was before; and importantly, I’m much faster at reading these papers than when I started.&lt;/p&gt;
@@ -244,19 +244,19 @@ prepare for future events.&lt;/p&gt;
 
 &lt;p&gt;This methodology is addressing another problem  I have as well: organization. Currently, I use &lt;a href=&quot;https://www.zotero.org/&quot;&gt;Zotero&lt;/a&gt; and &lt;a href=&quot;http://www.papershipapp.com/&quot;&gt;Papership&lt;/a&gt; to organize my research and reading. Once I get into a paper, I create a “reading list” of citations along with their abstracts; then some notes about their importance to the work I’m doing. Using the “blog post reading” methodology, I will have all of the pieces prior to the paper writing, pre-organized for my benefit. I believe that this process will be effective to making me a better scientist, and a better writer; and will update you as I go on! The first paper that I will experiment on will be a paper on diversity in Computer Science that has been sent around the department. It seems like an excellent starting place before getting into papers that are related to my research!&lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/thoughts/scientific-reading/&quot;&gt;Scientific Reading&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 20, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/thoughts/scientific-reading/&quot;&gt;Scientific Reading&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 20, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Simple CSV Data Wrangling with Python]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/" />
-  <id>http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/" />
+  <id>http://cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python</id>
   <published>2014-11-08T00:00:00-05:00</published>
   <updated>2014-11-08T00:00:00-05:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;I wanted to write a quick post today about a task that most of us do routinely but often think very little about - loading CSV (comma-separated value) data into Python. This simple action has a variety of obstacles that need to be overcome due to the nature of serialization and data transfer. In fact, I’m routinely surprised how often I have to jump through hoops to deal with this type of data, when it feels like it should be as easy as JSON or other serialization formats.&lt;/p&gt;
@@ -282,19 +282,19 @@ prepare for future events.&lt;/p&gt;
   &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/simple-csv-data-wrangling-with-python&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/&quot;&gt;Simple CSV Data Wrangling with Python&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 08, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/tutorials/simple-csv-data-wrangling-with-python/&quot;&gt;Simple CSV Data Wrangling with Python&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on November 08, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Computing a Bayesian Estimate of Star Rating Means]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means/" />
-  <id>http://www.cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means/" />
+  <id>http://cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means</id>
   <published>2014-09-11T00:00:00-04:00</published>
   <updated>2014-09-11T00:00:00-04:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;Consumers rely on the collective intelligence of other consumers to protect themselves from coffee pots that break at the first sign of water, eating bad food at the wrong restaurant, and stunning flops at the theater. Although occasionally there are metrics like Rotten Tomatoes, we primarily prejudge products we would like to consume through a simple 5 star rating. This methodology is powerful, because not only does it provide a simple, easily understandable metric, but people are generally willing to reliably cast a vote by clicking a star rating without too much angst.&lt;/p&gt;
@@ -325,19 +325,19 @@ prepare for future events.&lt;/p&gt;
   &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/computing-a-bayesian-estimate-of-star-rating-means&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means/&quot;&gt;Computing a Bayesian Estimate of Star Rating Means&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on September 11, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/tutorials/computing-a-bayesian-estimate-of-star-rating-means/&quot;&gt;Computing a Bayesian Estimate of Star Rating Means&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on September 11, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[How to Develop Quality Python Code]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code/" />
-  <id>http://www.cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code/" />
+  <id>http://cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code</id>
   <published>2014-08-20T00:00:00-04:00</published>
   <updated>2014-08-20T00:00:00-04:00</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;Developing in Python is very different from developing in other languages. Python is an interpreted language like Ruby or Perl, so developers are able to use read-evaluate-print loops (REPLs) to execute Python in real-time. This feature of Python means that it can be used for rapid development and prototyping because there is no build process. Python includes many functional programming tools akin to Scala or Javascript to assist with closure based script development. But Python is also a fully scalable object-oriented language, a paradigm used to build large modular software rather than to simply execute scripts, more akin to Java or C++.&lt;/p&gt;
@@ -350,20 +350,20 @@ prepare for future events.&lt;/p&gt;
   &lt;p&gt;&lt;a href=&quot;https://districtdatalabs.silvrback.com/how-to-develop-quality-python-code&quot;&gt;Read the complete article at District Data Labs&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code/&quot;&gt;How to Develop Quality Python Code&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on August 20, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/tutorials/how-to-develop-quality-python-code/&quot;&gt;How to Develop Quality Python Code&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on August 20, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Entity Resolution for Big Data]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/tutorials/entity-resolution-for-big-data/" />
-  <id>http://www.cs.umd.edu/~bengfort/tutorials/entity-resolution-for-big-data</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/tutorials/entity-resolution-for-big-data/" />
+  <id>http://cs.umd.edu/~bengfort/tutorials/entity-resolution-for-big-data</id>
   <updated>2014-03-10 13:57:07 UTCT00:00:00-00:00</updated>
   <published>2014-03-10T00:00:00-04:00</published>
   
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;Entity Resolution is becoming an important discipline in Computer Science
@@ -407,7 +407,7 @@ canonicalized references to particular entities and deduplicating and
 linking entities. As an example, consider the following example of a
 coauthor network from bibliographic data used for InfoVis 2004.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/network_resolution.png&quot; title=&quot;Network Resolution&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/network_resolution.png&quot; alt=&quot;ER and Network Analysis&quot; title=&quot;Network Resolution&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/images/network_resolution.png&quot; title=&quot;Network Resolution&quot;&gt;&lt;img src=&quot;http://cs.umd.edu/~bengfort/images/network_resolution.png&quot; alt=&quot;ER and Network Analysis&quot; title=&quot;Network Resolution&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Deduplication significantly reduced the complexity of the network from an
 ninth order graph to a much simpler fourth order graph, of significantly
@@ -443,7 +443,7 @@ to only a single real world entity. We can therefore discuss the ER problem
 as one involving matching record pairs corresponding to the same entity,
 and as a graph of related records/mentions to related entities.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/problem_statement.png&quot; title=&quot;Abstract ER Problem&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/problem_statement.png&quot; alt=&quot;Abstract ER Problem&quot; title=&quot;Abstract ER Problem&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/images/problem_statement.png&quot; title=&quot;Abstract ER Problem&quot;&gt;&lt;img src=&quot;http://cs.umd.edu/~bengfort/images/problem_statement.png&quot; alt=&quot;Abstract ER Problem&quot; title=&quot;Abstract ER Problem&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Deduplication&lt;/strong&gt;: the task of clustering the records or mentions that
 correspond to the same entity. There is an intensional variant of this
@@ -624,7 +624,7 @@ comparing mentions within cities reduces the comparison space to the more
 managable &lt;em&gt;1 billion&lt;/em&gt; comparisions, which takes only 16 minutes at the same
 rate.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/blocking.png&quot; title=&quot;Blocking Heuristic&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/blocking.png&quot; alt=&quot;Blocking Heuristic&quot; title=&quot;Blocking Heuristic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/images/blocking.png&quot; title=&quot;Blocking Heuristic&quot;&gt;&lt;img src=&quot;http://cs.umd.edu/~bengfort/images/blocking.png&quot; alt=&quot;Blocking Heuristic&quot; title=&quot;Blocking Heuristic&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Although some matches can be missed using blocking techniques, the key is
 to select a blocking algorithm that minimizes the subtraction of the set
@@ -645,7 +645,7 @@ long as the set M is not empty. This approach is interesting because
 mentions can be included in more than one canopy, and therefore reduces the
 chance that the blocking method excludes an actual match.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/images/canopy.png&quot; title=&quot;Canopy Clustering&quot;&gt;&lt;img src=&quot;http://www.cs.umd.edu/~bengfort/images/canopy.png&quot; alt=&quot;Canopy Clustering&quot; title=&quot;Canopy Clustering&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/images/canopy.png&quot; title=&quot;Canopy Clustering&quot;&gt;&lt;img src=&quot;http://cs.umd.edu/~bengfort/images/canopy.png&quot; alt=&quot;Canopy Clustering&quot; title=&quot;Canopy Clustering&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Distributed ER&lt;/strong&gt;: The MapReduce framework is very popular for large,
 parallel tasks and there are several open source frameworks related to
@@ -687,20 +687,20 @@ accepted at KDD 2013 in Chicago, Il.&lt;/p&gt;
 run-through of the presentation.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/tutorials/entity-resolution-for-big-data/&quot;&gt;Entity Resolution for Big Data&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on March 10, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/tutorials/entity-resolution-for-big-data/&quot;&gt;Entity Resolution for Big Data&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on March 10, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Goal Driven Mixed-Initiative Systems with Collaborative Filtering]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/thoughts/goal-driven-mixed-initiative-systems-with-collaborative-filtering/" />
-  <id>http://www.cs.umd.edu/~bengfort/thoughts/goal-driven-mixed-initiative-systems-with-collaborative-filtering</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/thoughts/goal-driven-mixed-initiative-systems-with-collaborative-filtering/" />
+  <id>http://cs.umd.edu/~bengfort/thoughts/goal-driven-mixed-initiative-systems-with-collaborative-filtering</id>
   <updated>2014-02-27 15:32:10 UTCT00:00:00-00:00</updated>
   <published>2014-02-27T00:00:00-05:00</published>
   
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;Mixed-initiative systems combine the efforts of human actors with artificial agents to improve the performance of both participants in some mutual functionality. For example, an intelligent search application can be viewed as a mixed-initiative system where a human uses token strings or a special query language to enact searches that are carried out by an ensemble of statistical models which deliver intelligent results. In return, they benefit from the positive feedback of the user, e.g. which links are clicked, or how many queries it takes to find a result. &lt;/p&gt;
@@ -725,19 +725,19 @@ run-through of the presentation.&lt;/p&gt;
 
 &lt;p&gt;In this manner, the system can affect the behavior of the user before the user is aware of the need for a change in goals. This results in a highly personalized system that is bidirectional. Not only can the system use the behavior state to recommend goals and influence human behavior, the system can also use the goals to modify the results based on positive feedback from other users with similar goals and similar behavior. For instance, the selection of a recommended goal is a positive feedback mechanism that can be used in active learning when computing goal-state similarity matrices. &lt;/p&gt;
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/thoughts/goal-driven-mixed-initiative-systems-with-collaborative-filtering/&quot;&gt;Goal Driven Mixed-Initiative Systems with Collaborative Filtering&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on February 27, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/thoughts/goal-driven-mixed-initiative-systems-with-collaborative-filtering/&quot;&gt;Goal Driven Mixed-Initiative Systems with Collaborative Filtering&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on February 27, 2014.&lt;/p&gt;</content>
 </entry>
 
 
 <entry>
   <title type="html"><![CDATA[Getting Moved In]]></title>
-  <link rel="alternate" type="text/html" href="http://www.cs.umd.edu/~bengfort/news/moving-in/" />
-  <id>http://www.cs.umd.edu/~bengfort/news/moving-in</id>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/news/moving-in/" />
+  <id>http://cs.umd.edu/~bengfort/news/moving-in</id>
   <published>2014-01-16T19:59:24Z</published>
   <updated>2014-01-16T19:59:24Z</updated>
   <author>
     <name>Benjamin Bengfort</name>
-    <uri>http://www.cs.umd.edu/~bengfort</uri>
+    <uri>http://cs.umd.edu/~bengfort</uri>
     <email>bengfort@cs.umd.edu</email>
   </author>
   <content type="html">&lt;p&gt;Hi, I’m Ben. Today, for the fourth time, I’m starting over on my PhD. I’ve
@@ -760,7 +760,7 @@ researching!&lt;/p&gt;
 Markdown in a repository.&lt;/p&gt;
 
 
-  &lt;p&gt;&lt;a href=&quot;http://www.cs.umd.edu/~bengfort/news/moving-in/&quot;&gt;Getting Moved In&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://www.cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on January 16, 2014.&lt;/p&gt;</content>
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/news/moving-in/&quot;&gt;Getting Moved In&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on January 16, 2014.&lt;/p&gt;</content>
 </entry>
 
 </feed>

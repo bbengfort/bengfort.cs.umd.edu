@@ -1,4 +1,4 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: http://www.cs.umd.edu/~bengfort/sitemap.xml
+Sitemap: http://cs.umd.edu/~bengfort/sitemap.xml
