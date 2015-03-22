@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 tagline: Scientific writings recognized by peers
 tags: [publications, CV, research]
-modified: 2015-02-03 23:35:16 -0500
+modified: 2015-03-22 14:56:42 -0400
 ---
 
 1. [Hadoop Fundamentals for Data Scientists](http://shop.oreilly.com/product/0636920035183.do). O’Reilly Media, 2015.
@@ -13,6 +13,10 @@ modified: 2015-02-03 23:35:16 -0500
 
 3. T. Ojeda, S. P. Murphy, B. Bengfort, and A. Dasgupta, [Practical Data Science Cookbook](https://www.packtpub.com/big-data-and-business-intelligence/practical-data-science-cookbook). Packt Publishing Ltd, 2014.
 
-4. B. Bengfort, “A Survey of Stochastic and Gazetteer Based Approaches for Named Entity Recognition,” University of Maryland Baltimore County, Nov. 2012. [[PDF]]({{ site.url }}/papers/survey-ner.pdf)
+4. B. Bengfort and S. P. Murphy, “[Teaching the Elephant to Read: Hadoop, Python, and NLP](http://strataconf.com/stratany2013/public/schedule/detail/30806),” presented at the Strata Conference + Hadoop World, New York, NY, USA, 28-Oct-2013.
 
-5. B. Bengfort, W. Zhang, and X. Du, “[Efficient resource allocation in Hybrid Wireless Networks](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5779238&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5779238),” in Wireless Communications and Networking Conference (WCNC), 2011 IEEE, 2011, pp. 820–825. [[PDF]]({{ site.url }}/papers/efficient-resource-allocation.pdf)
+5. B. Bengfort, “[Natural Language Processing of Big Data using NLTK and Hadoop Streaming](http://www.meetup.com/Data-Science-DC/events/109386702/),” presented at the Data Science DC: Big Data Week, George Washington University, Washington DC, 23-Apr-2013.
+
+6. B. Bengfort, “A Survey of Stochastic and Gazetteer Based Approaches for Named Entity Recognition,” University of Maryland Baltimore County, Nov. 2012. [[PDF]]({{ site.url }}/papers/survey-ner.pdf)
+
+7. B. Bengfort, W. Zhang, and X. Du, “[Efficient resource allocation in Hybrid Wireless Networks](http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5779238&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D5779238),” in Wireless Communications and Networking Conference (WCNC), 2011 IEEE, 2011, pp. 820–825. [[PDF]]({{ site.url }}/papers/efficient-resource-allocation.pdf)
