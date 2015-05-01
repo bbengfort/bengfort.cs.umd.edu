@@ -5,13 +5,46 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://cs.umd.edu/~bengfort/feed.xml" />
 <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort" />
-<updated>2015-03-22T15:37:31-04:00</updated>
+<updated>2015-05-01T13:06:22-04:00</updated>
 <id>http://cs.umd.edu/~bengfort/</id>
 <author>
   <name>Benjamin Bengfort</name>
   <uri>http://cs.umd.edu/~bengfort/</uri>
   <email>bengfort@cs.umd.edu</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Visual Discovery of Communication Patterns in Email Networks]]></title>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/thoughts/visual-discovery-of-communication-patterns-in-email-networks/" />
+  <id>http://cs.umd.edu/~bengfort/thoughts/visual-discovery-of-communication-patterns-in-email-networks</id>
+  <published>2015-04-06T00:00:00-04:00</published>
+  <updated>2015-04-06T00:00:00-04:00</updated>
+  <author>
+    <name>Benjamin Bengfort</name>
+    <uri>http://cs.umd.edu/~bengfort</uri>
+    <email>bengfort@cs.umd.edu</email>
+  </author>
+  <content type="html">&lt;p&gt;&lt;img src=&quot;http://cs.umd.edu/~bengfort/images/gephi_analysis.png&quot; alt=&quot;Analysis of Betweenness Centrality&quot; /&gt;&lt;/p&gt;
+
+&lt;p style=&quot;text-align:center; padding-bottom:18px;&quot;&gt;
+    &lt;strong&gt;&lt;small&gt;An analysis of key players in a large and small email network.&lt;/small&gt;&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In the age of social networks, it is very popular to analyze Twitter and Facebook to detect relationships and communities and to discover how information flows between groups. However, both Facebook and Twitter are examples of “performed” social networks: because a user has full control over who he or she “friends” or “follows,” he can artificially create a persona that he wishes the outside world to perceive him as. In fact, it has been well-studied that expressions of taste typically exclude the most critical groups to communication flows, and that social networks are merely the expressions of performed taste (Liu, 2007).&lt;/p&gt;
+
+&lt;p&gt;Email, on the other hand, is used in every facet of modern life and typically includes and aggregates facets of ourselves that would otherwise be segregated — for example, professional and personal personas. Because we spend so much time writing, reading, and responding to email, it has become integrated into a communication fabric that far exceeds other media that may get more analytical attention like text messaging or social networks. Email, therefore, can be seen to embed a natural communication network, from which we can extract rich insights about actual communications and influences within a single ego network — the email inbox of a single user — without the bias of taste performance.&lt;/p&gt;
+
+&lt;p&gt;In this paper, we will explore the visual analysis of two personal email networks, one from each of the authors, where one network is extremely large in terms of the number of nodes (email addresses) and the other network is extremely large in terms of the number of edges (cliquish, highly-connected email). We hope to show that if a user can visualize their own networks, they will better understand the dynamic nature of their communication in terms of key players, communities, and gaps in communication. Through such visual understanding, users may be better able to respond to and manage the constant flow of email messages meaningfully.&lt;/p&gt;
+
+&lt;p&gt;We will use Gephi (Gephi, 2010) to visualize email networks that have been extracted from &lt;code&gt;mbox&lt;/code&gt; files via a Python tool written by the authors called &lt;code&gt;tribe&lt;/code&gt;, which serializes the network into GraphML (Brandes, 2010). Gephi is widely used for visual exploration of networks (Bastian, 2009) and includes many features for the statistical analysis of small to medium networks (McSweeney, 2009). Work of note demonstrates the analysis of dynamic network connections within Twitter conversations (Bruns, 2012), which shows how Gephi might be used for networks whose topology can rapidly shift, as in email. As part of our analysis we will critique Gephi and contrast it to NodeXL (Smith, 2010), another popular tool for visual network analysis.&lt;/p&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Read the full article&lt;/strong&gt;: &lt;a href=&quot;http://cs.umd.edu/~bengfort/papers/visual-discovery-email-networks.pdf&quot;&gt;Visual Discovery of Communication Patterns in Email Networks&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/thoughts/visual-discovery-of-communication-patterns-in-email-networks/&quot;&gt;Visual Discovery of Communication Patterns in Email Networks&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on April 06, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>
