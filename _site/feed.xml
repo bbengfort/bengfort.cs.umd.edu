@@ -5,13 +5,94 @@
 <generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
 <link rel="self" type="application/atom+xml" href="http://cs.umd.edu/~bengfort/feed.xml" />
 <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort" />
-<updated>2015-05-01T13:06:22-04:00</updated>
+<updated>2015-05-04T10:30:14-04:00</updated>
 <id>http://cs.umd.edu/~bengfort/</id>
 <author>
   <name>Benjamin Bengfort</name>
   <uri>http://cs.umd.edu/~bengfort/</uri>
   <email>bengfort@cs.umd.edu</email>
 </author>
+
+
+<entry>
+  <title type="html"><![CDATA[Evolutionary Design of Self-Organizing Particle Systems for Collective Problem Solving]]></title>
+  <link rel="alternate" type="text/html" href="http://cs.umd.edu/~bengfort/research/evolutionary-design-of-particle-swarms/" />
+  <id>http://cs.umd.edu/~bengfort/research/evolutionary-design-of-particle-swarms</id>
+  <published>2015-05-04T00:00:00-04:00</published>
+  <updated>2015-05-04T00:00:00-04:00</updated>
+  <author>
+    <name>Benjamin Bengfort</name>
+    <uri>http://cs.umd.edu/~bengfort</uri>
+    <email>bengfort@cs.umd.edu</email>
+  </author>
+  <content type="html">&lt;iframe src=&quot;//www.slideshare.net/slideshow/embed_code/key/M99oimH59QL5V1&quot; width=&quot;595&quot; height=&quot;485&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; style=&quot;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&quot; allowfullscreen=&quot;&quot;&gt; &lt;/iframe&gt;
+&lt;div style=&quot;margin-bottom:15px&quot;&gt; &lt;strong&gt; &lt;a href=&quot;//www.slideshare.net/BenjaminBengfort/evolutionary-design-of-swarms-ssci-2014&quot; title=&quot;Evolutionary Design of Swarms (SSCI 2014)&quot; target=&quot;_blank&quot;&gt;Evolutionary Design of Swarms (SSCI 2014)&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&quot;//www.slideshare.net/BenjaminBengfort&quot; target=&quot;_blank&quot;&gt;Benjamin Bengfort&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+&lt;p&gt;In December, I attended IEEE SSCI 2014 - a symposium on computational intelligence where I presented work that my classmates and I put together for Jim Reggia’s class: &lt;em&gt;Artificial Life and Evolutionary Computation&lt;/em&gt;. The goal of the paper was to show off the use of evolutionary and genetic algorithms for &lt;em&gt;creativity&lt;/em&gt;, that is the use of a computer program to design a system without very much human input. I’ve attached the abstract, paper, and presentation from that conference here. However, the purpose of this post isn’t to point out the scientific contributions - but rather the practical ones.&lt;/p&gt;
+
+&lt;p&gt;In order to do this project, we had to create a pretty extensive Python software base with the following components:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A simulator that could both visually and computationally determine the fitness of a particle swarm&lt;/li&gt;
+  &lt;li&gt;A multiprocess evolutionary mechanism for designing the particle swarms&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In the end our deployment used PyGame, Celery, and an Amazon EC2 2XL server which ran for a week to finish the computation. The paper doesn’t necessarily touch too much on the development effort required. Given the opportunity to do this again, I probably would have used Go or Cython to improve the performance (not much you can do in a single semester). This post collects both the Github repository and development environment with the scientific details. Hopefully it’s a useful reference! &lt;/p&gt;
+
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;Using only simple rules for local interactions, groups
+of agents can form self-organizing super-organisms or flocks
+that show global emergent behavior. When agents are also
+extended with memory and goals the resulting flock not only
+demonstrates emergent behavior, but also collective intelligence:
+the ability for the group to solve problems that might be
+beyond the ability of the individual alone. Until now, research
+has focused on the improvement of particle design for global
+behavior; however, techniques for human-designed particles are
+task-specific. In this paper we will demonstrate that evolutionary
+computing techniques can be applied to design particles, not only
+to optimize the parameters for movement but also the structure of
+controlling finite state machines that enable collective intelligence.
+The evolved design not only exhibits emergent, self-organizing
+behavior but also significantly outperforms a human design in
+a specific problem domain. The strategy of the evolved design
+may be very different from what is intuitive to humans and
+perhaps reflects more accurately how nature designs systems for
+problem solving. Furthermore, evolutionary design of particles
+for collective intelligence is more flexible and able to target a
+wider array of problems either individually or as a whole.&lt;/p&gt;
+
+&lt;h3 id=&quot;project&quot;&gt;Project&lt;/h3&gt;
+
+&lt;p&gt;The full project is available on Github if you’d like to try it yourself. The Github repository contains instructions for how to install the dependencies, and how to run the simulator as well as the evolver. The dependencies might be the main issue, installing PyGame for the visual simulation can be tricky, and Celery is needed for the multi-process evolver. We will respond to any issues that you add as soon as we can!&lt;/p&gt;
+
+&lt;style&gt;
+
+    img {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+&lt;/style&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mclumd/swarm-simulator/issues&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/issues/mclumd/swarm-simulator.svg&quot; alt=&quot;GitHub issues&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://github.com/mclumd/swarm-simulator/stargazers&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/stars/mclumd/swarm-simulator.svg&quot; alt=&quot;GitHub stars&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://github.com/mclumd/swarm-simulator/network&quot;&gt;&lt;img src=&quot;https://img.shields.io/github/forks/mclumd/swarm-simulator.svg&quot; alt=&quot;GitHub forks&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;https://raw.githubusercontent.com/mclumd/swarm-simulator/master/LICENSE&quot;&gt;&lt;img src=&quot;https://img.shields.io/badge/license-MIT-blue.svg&quot; alt=&quot;GitHub license&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The code itself is provided under the MIT license. The various badges describing the Github repo are above.&lt;/p&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/mclumd/swarm-simulator&quot;&gt;&lt;strong&gt;Try the project yourself on Github&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7011790&quot;&gt;&lt;strong&gt;Read the full paper on IEEE Xplore&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.slideshare.net/BenjaminBengfort/evolutionary-design-of-swarms-ssci-2014&quot;&gt;&lt;strong&gt;View the presentation on Slideshare&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;&lt;a href=&quot;http://cs.umd.edu/~bengfort/research/evolutionary-design-of-particle-swarms/&quot;&gt;Evolutionary Design of Self-Organizing Particle Systems for Collective Problem Solving&lt;/a&gt; was originally published by Benjamin Bengfort at &lt;a href=&quot;http://cs.umd.edu/~bengfort&quot;&gt;Benjamin Bengfort&lt;/a&gt; on May 04, 2015.&lt;/p&gt;</content>
+</entry>
 
 
 <entry>

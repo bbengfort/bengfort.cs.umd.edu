@@ -5,29 +5,29 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Visual Discovery of Communication Patterns in Email Networks &#8211; Benjamin Bengfort</title>
+  <title>Evolutionary Design of Self-Organizing Particle Systems for Collective Problem Solving &#8211; Benjamin Bengfort</title>
   <meta name="description" content="">
-  <meta name="keywords" content="news, research, visualization, gephi, email">
+  <meta name="keywords" content="news, research, evolutionary algorithms, particle swarms">
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://cs.umd.edu/~bengfort/images/">
-  <meta name="twitter:title" content="Visual Discovery of Communication Patterns in Email Networks">
+  <meta name="twitter:title" content="Evolutionary Design of Self-Organizing Particle Systems for Collective Problem Solving">
   <meta name="twitter:description" content="My graduate research at the University of Maryland">
   <meta name="twitter:creator" content="@bbengfort">
 
   <!-- Open Graph -->
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Visual Discovery of Communication Patterns in Email Networks">
+  <meta property="og:title" content="Evolutionary Design of Self-Organizing Particle Systems for Collective Problem Solving">
   <meta property="og:description" content="My graduate research at the University of Maryland">
-  <meta property="og:url" content="http://cs.umd.edu/~bengfort/thoughts/visual-discovery-of-communication-patterns-in-email-networks/">
+  <meta property="og:url" content="http://cs.umd.edu/~bengfort/research/evolutionary-design-of-particle-swarms/">
   <meta property="og:site_name" content="Benjamin Bengfort">
 
   
   
 
   
-  <link rel="canonical" href="http://cs.umd.edu/~bengfort/thoughts/visual-discovery-of-communication-patterns-in-email-networks/">
+  <link rel="canonical" href="http://cs.umd.edu/~bengfort/research/evolutionary-design-of-particle-swarms/">
   <link href="http://cs.umd.edu/~bengfort/feed.xml" type="application/atom+xml" rel="alternate" title="Benjamin Bengfort Feed">
   <link rel="author" href="https://plus.google.com/+BenjaminBengfort-DataNerd/?rel=author">
 
@@ -99,27 +99,75 @@
   </div>
   <article>
     <div class="headline-wrap">
-      <h1>Visual Discovery of Communication Patterns in Email Networks</h1>
+      <h1>Evolutionary Design of Self-Organizing Particle Systems for Collective Problem Solving</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
-      <p><img src="http://cs.umd.edu/~bengfort/images/gephi_analysis.png" alt="Analysis of Betweenness Centrality" /></p>
+      <iframe src="//www.slideshare.net/slideshow/embed_code/key/M99oimH59QL5V1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen=""> </iframe>
+<div style="margin-bottom:15px"> <strong> <a href="//www.slideshare.net/BenjaminBengfort/evolutionary-design-of-swarms-ssci-2014" title="Evolutionary Design of Swarms (SSCI 2014)" target="_blank">Evolutionary Design of Swarms (SSCI 2014)</a> </strong> from <strong><a href="//www.slideshare.net/BenjaminBengfort" target="_blank">Benjamin Bengfort</a></strong> </div>
 
-<p style="text-align:center; padding-bottom:18px;">
-    <strong><small>An analysis of key players in a large and small email network.</small></strong>
-</p>
+<p>In December, I attended IEEE SSCI 2014 - a symposium on computational intelligence where I presented work that my classmates and I put together for Jim Reggia’s class: <em>Artificial Life and Evolutionary Computation</em>. The goal of the paper was to show off the use of evolutionary and genetic algorithms for <em>creativity</em>, that is the use of a computer program to design a system without very much human input. I’ve attached the abstract, paper, and presentation from that conference here. However, the purpose of this post isn’t to point out the scientific contributions - but rather the practical ones.</p>
 
-<p>In the age of social networks, it is very popular to analyze Twitter and Facebook to detect relationships and communities and to discover how information flows between groups. However, both Facebook and Twitter are examples of “performed” social networks: because a user has full control over who he or she “friends” or “follows,” he can artificially create a persona that he wishes the outside world to perceive him as. In fact, it has been well-studied that expressions of taste typically exclude the most critical groups to communication flows, and that social networks are merely the expressions of performed taste (Liu, 2007).</p>
+<p>In order to do this project, we had to create a pretty extensive Python software base with the following components:</p>
 
-<p>Email, on the other hand, is used in every facet of modern life and typically includes and aggregates facets of ourselves that would otherwise be segregated — for example, professional and personal personas. Because we spend so much time writing, reading, and responding to email, it has become integrated into a communication fabric that far exceeds other media that may get more analytical attention like text messaging or social networks. Email, therefore, can be seen to embed a natural communication network, from which we can extract rich insights about actual communications and influences within a single ego network — the email inbox of a single user — without the bias of taste performance.</p>
+<ol>
+  <li>A simulator that could both visually and computationally determine the fitness of a particle swarm</li>
+  <li>A multiprocess evolutionary mechanism for designing the particle swarms</li>
+</ol>
 
-<p>In this paper, we will explore the visual analysis of two personal email networks, one from each of the authors, where one network is extremely large in terms of the number of nodes (email addresses) and the other network is extremely large in terms of the number of edges (cliquish, highly-connected email). We hope to show that if a user can visualize their own networks, they will better understand the dynamic nature of their communication in terms of key players, communities, and gaps in communication. Through such visual understanding, users may be better able to respond to and manage the constant flow of email messages meaningfully.</p>
+<p>In the end our deployment used PyGame, Celery, and an Amazon EC2 2XL server which ran for a week to finish the computation. The paper doesn’t necessarily touch too much on the development effort required. Given the opportunity to do this again, I probably would have used Go or Cython to improve the performance (not much you can do in a single semester). This post collects both the Github repository and development environment with the scientific details. Hopefully it’s a useful reference! </p>
 
-<p>We will use Gephi (Gephi, 2010) to visualize email networks that have been extracted from <code>mbox</code> files via a Python tool written by the authors called <code>tribe</code>, which serializes the network into GraphML (Brandes, 2010). Gephi is widely used for visual exploration of networks (Bastian, 2009) and includes many features for the statistical analysis of small to medium networks (McSweeney, 2009). Work of note demonstrates the analysis of dynamic network connections within Twitter conversations (Bruns, 2012), which shows how Gephi might be used for networks whose topology can rapidly shift, as in email. As part of our analysis we will critique Gephi and contrast it to NodeXL (Smith, 2010), another popular tool for visual network analysis.</p>
+<h2 id="abstract">Abstract</h2>
+
+<p>Using only simple rules for local interactions, groups
+of agents can form self-organizing super-organisms or flocks
+that show global emergent behavior. When agents are also
+extended with memory and goals the resulting flock not only
+demonstrates emergent behavior, but also collective intelligence:
+the ability for the group to solve problems that might be
+beyond the ability of the individual alone. Until now, research
+has focused on the improvement of particle design for global
+behavior; however, techniques for human-designed particles are
+task-specific. In this paper we will demonstrate that evolutionary
+computing techniques can be applied to design particles, not only
+to optimize the parameters for movement but also the structure of
+controlling finite state machines that enable collective intelligence.
+The evolved design not only exhibits emergent, self-organizing
+behavior but also significantly outperforms a human design in
+a specific problem domain. The strategy of the evolved design
+may be very different from what is intuitive to humans and
+perhaps reflects more accurately how nature designs systems for
+problem solving. Furthermore, evolutionary design of particles
+for collective intelligence is more flexible and able to target a
+wider array of problems either individually or as a whole.</p>
+
+<h3 id="project">Project</h3>
+
+<p>The full project is available on Github if you’d like to try it yourself. The Github repository contains instructions for how to install the dependencies, and how to run the simulator as well as the evolver. The dependencies might be the main issue, installing PyGame for the visual simulation can be tricky, and Celery is needed for the multi-process evolver. We will respond to any issues that you add as soon as we can!</p>
+
+<style>
+
+    img {
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+</style>
+
+<p><a href="https://github.com/mclumd/swarm-simulator/issues"><img src="https://img.shields.io/github/issues/mclumd/swarm-simulator.svg" alt="GitHub issues" /></a>
+<a href="https://github.com/mclumd/swarm-simulator/stargazers"><img src="https://img.shields.io/github/stars/mclumd/swarm-simulator.svg" alt="GitHub stars" /></a>
+<a href="https://github.com/mclumd/swarm-simulator/network"><img src="https://img.shields.io/github/forks/mclumd/swarm-simulator.svg" alt="GitHub forks" /></a>
+<a href="https://raw.githubusercontent.com/mclumd/swarm-simulator/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="GitHub license" /></a></p>
+
+<p>The code itself is provided under the MIT license. The various badges describing the Github repo are above.</p>
 
 <p>…</p>
 
-<p><strong>Read the full article</strong>: <a href="http://cs.umd.edu/~bengfort/papers/visual-discovery-email-networks.pdf">Visual Discovery of Communication Patterns in Email Networks</a></p>
+<p><a href="https://github.com/mclumd/swarm-simulator"><strong>Try the project yourself on Github</strong></a></p>
+
+<p><a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7011790"><strong>Read the full paper on IEEE Xplore</strong></a></p>
+
+<p><a href="http://www.slideshare.net/BenjaminBengfort/evolutionary-design-of-swarms-ssci-2014"><strong>View the presentation on Slideshare</strong></a></p>
 
       <hr />
       <footer role="contentinfo">
@@ -137,9 +185,9 @@
 
 
         </div>
-        <p class="byline"><strong>Visual Discovery of Communication Patterns in Email Networks</strong> was published on <time datetime="2015-04-06T00:00:00-04:00">April 06, 2015</time> by <a href="http://cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
+        <p class="byline"><strong>Evolutionary Design of Self-Organizing Particle Systems for Collective Problem Solving</strong> was published on <time datetime="2015-05-04T00:00:00-04:00">May 04, 2015</time> by <a href="http://cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
         
-        <br /><strong>Available in</strong> <a href="http://cs.umd.edu/~bengfort/papers/visual-discovery-email-networks.pdf">PDF</a>
+        <br /><strong>Available in</strong> <a href="http://cs.umd.edu/~bengfort/papers/evolutionary-design-swarms.pdf">PDF</a>
         
         </p>
       </footer>
@@ -161,21 +209,13 @@
       
       
         
-          
-        
       
-      
-      <li><a href="http://cs.umd.edu/~bengfort/thoughts/analyzing-response-to-vehicular-incidents-with-tableau/" title="Analyzing Response to Vehicular Incidents with Tableau">Analyzing Response to Vehicular Incidents with Tableau</a></li>
       
     
       
       
         
-          
-        
       
-      
-      <li><a href="http://cs.umd.edu/~bengfort/thoughts/baxter-robots-are-learning-to-think-see-and-read/" title="Baxter Robots are Learning to Think, See, and Cook">Baxter Robots are Learning to Think, See, and Cook</a></li>
       
     
     </ul>
