@@ -12,8 +12,8 @@ email: bengfort@cs.umd.edu
 tagline: A graduate research assistant in Computer Science at UMD
 description: My graduate research at the University of Maryland
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "http://cs.umd.edu/~bengfort" # the base hostname & protocol for your site
-url: "http://localhost:4000"       # the development base hostname & protocol
+url: "http://cs.umd.edu/~bengfort" # the base hostname & protocol for your site
+# url: "http://localhost:4000"       # the development base hostname & protocol
 
 twitter_username: bbengfort
 github_username:  bbengfort
@@ -27,7 +27,7 @@ markdown:    kramdown
 owner:
   name: Benjamin Bengfort
   avatar: bio-photo.jpg
-  bio: "Just a graduate research assistant in the Metacognition Lab at UMD."
+  bio: "Studying distributed storage systems and hoping for a PhD."
   email: bengfort@cs.umd.edu
   location: "Washington, D.C. USA"
 

@@ -4,16 +4,12 @@ title:  "Actors for Distributed Dataflow"
 tags: [news, research, actors, simulation, distributed systems]
 category: research
 image:
+  feature: actors-dataflow.png
+  credit: Simulated communications patterns of actors for our three models.
 comments:
 share:
 paper: actors-dataflow.pdf
 ---
-
-![Analysis of Betweenness Centrality]({{ site.url }}/images/actors-dataflow.png)
-
-<p style="text-align:center; padding-bottom:18px;">
-    <strong><small>Actual communications patterns of actors for our three communication models: dataflow (blue), NNMF (green), and machine learning (red). The color identifies the actor type, and the size the number of messages received. This communication graph was constructed on a simulated cluster of 64 nodes with 4 processes per node.</small></strong>
-</p>
 
 Recently my research crew (since we're all in different research groups) has become interested in the possibility of reimagining _actors_ for distributed computation. Actor based computation is actually pretty old-school, but it's regaining popularity, especially with distributed computation becoming vital for big data processing. After Kostas' advisor, Dr. Amol Deshpande introduced us to the _Orleans_ paper that uses virtual actors; we decided to investigate further. Our project involved creating a simulation using `Simpy` to study actor patterns. The paper below discusses our initial findings.
 
@@ -36,6 +32,14 @@ In response to this inflexibility of the data flow model, the _actor model_ [6],
 In this paper we investigate the potential of virtual actors for distributed computing on streaming data by simulating a computing cluster which implements a _generalized virtual actor space_. A generalized virtual actor space replaces the programing model of virtual actors with a daemon service that runs in the background of all nodes in the cluster; allocating resources to a variety of actor programs in an on-demand fashion such that the resources can scale as variability of data streams changes, while balancing load across many &ldquo;always on&rdquo; computations that must share resources. We have simulated this framework by analyzing the communication patterns of three real-time applications: a traditional data flow, an online recommendation application, and a solar weather forecasting application. We then present an analysis of how the virtual actor model behaved in simulation on the cluster and show that this model is a suitable substitute for the data flow model.
 
 The rest of this paper is organized as follows. In the first section we present the details of our distributed computing model using actors, and describe the generalized virtual actor space in detail. Following this, we describe the applications we analyzed, and how we derived a communication model from each type of application. Finally, we describe our simulation methodology, present our results, and conclude with a discussion and future work.
+
+&hellip;
+
+![Simulated communication patterns of actors for our three models.]({{ site.url }}/images/actors-dataflow.png)
+
+<p style="text-align:center; padding-bottom:18px;">
+    <strong><small>Actual communications patterns of actors for our three communication models: dataflow (blue), NNMF (green), and machine learning (red). The color identifies the actor type, and the size the number of messages received. This communication graph was constructed on a simulated cluster of 64 nodes with 4 processes per node.</small></strong>
+</p>
 
 &hellip;
 

@@ -1,7 +1,6 @@
 ---
-layout: nil
+layout:
 ---
-
 /* {{ site.url }} */
 /* {{ site.title }} */
 /* {{ site.tagline }} */
