@@ -8,7 +8,7 @@
 
 I don't update this site very often, so it's useful for me to have some notes to both write and publish the site to the UMD servers. The site is a [jekyll](https://jekyllrb.com/) statically generated site. Make sure you have the `jekyll` command installed (OS upgrades tend to get rid of it):
 
-    gem install jekyll
+    $ gem install jekyll
 
 To start writing, edit the the `_config.yml` file and swap the comments for the url as follows:
 
@@ -17,7 +17,7 @@ To start writing, edit the the `_config.yml` file and swap the comments for the 
 
 This will allow you to serve the local website and be able to click around correctly. Speaking of, serve the website as follows:
 
-    jekyll serve
+    $ jekyll serve
 
 To create a new post, all you need to do is create a new file in the `_posts` directory. How you name files in this folder is important. Jekyll requires blog post files to be named according to the following format:
 
@@ -50,8 +50,18 @@ Edit the `_config.yml` to put back the UMD url as the domain:
 
 Then _before you commit to Github_ create a build of the site:
 
-    jekyll build
+    $ jekyll build
 
 This is important since you can't install Jekyll on Junkfood (the Unix cluster the site is hosted on). So the static files must be in the repository and cloned directly to Junkfood.
 
-Next, SSH into junkfood - which is possible as long as you're connected to the CS VPN. 
+Next, SSH into junkfood - which is possible if you're not actually on campus as long as you're connected to the CS VPN. Then change to the www repo in your home directory. Pull the changes from Github (and hope that everything is configured correctly).
+
+    $ ssh junkfood
+    $ cd repos/www
+    $ git pull
+
+Now, this directory is not where the site is hosted from. I use `rsync` to sync the `_site` directory in particular to the correct location. There is a script in the `~/bin` directory to make this happen. Luckily, this is also on the `$PATH` so simply:
+
+    $ websync
+
+That's it, you should be able to reload the page and have your new static site up and running!
