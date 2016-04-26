@@ -22,7 +22,7 @@ A distributed system can loosely be described as multiple instances of a softwar
 
 One high level view of the design of a system looks at the propagation of events, or messages being sent between nodes in the distributed system. This can be visualized using a [message sequence chart](https://en.wikipedia.org/wiki/Message_sequence_chart) which embeds the time flow of a system and displays the interaction between nodes as they generate messages in reaction to received messages.
 
-[![Paxos Message Flow Diagram]({{ site.base_url }}/images/2016-04-26-epaxos-message-flow.png)](https://www.cs.cmu.edu/~dga/papers/epaxos-sosp2013.pdf)
+[![Paxos Message Flow Diagram]({{ site.url }}/images/2016-04-26-epaxos-message-flow.png)](https://www.cs.cmu.edu/~dga/papers/epaxos-sosp2013.pdf)
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>Message flow diagram for EPaxos</small></p>
 
@@ -30,7 +30,7 @@ In the message sequence chart, every lane represents a single replica and arrows
 
 One method of designing a distributed system is to consider the design of only a _single_ instance. Each instance reacts to events (messages) then can update their state or do some work, and generate messages of their own. The receipt and sending of messages defines the collective behavior. This is a simplification of the [actor model](https://en.wikipedia.org/wiki/Actor_model) of distributed computing. This seems like it might make things a bit easier, because now we only have to visualize the behavior of a single instance, and describe message handling as a flow chart of decision making.
 
-[![Flow Chart of Raft Messages]({{ site.base_url }}/images/2016-04-26-raft-message-flow.png)]({{ site.base_url }}/images/2016-04-26-raft-message-flow.png)
+[![Flow Chart of Raft Messages]({{ site.url }}/images/2016-04-26-raft-message-flow.png)]({{ site.url }}/images/2016-04-26-raft-message-flow.png)
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>Raft message reaction flow chart</small></p>
 
@@ -43,7 +43,7 @@ This visualization still needs a lot of help, however. It is complex, and doesn'
 
 The most interesting combination of message traffic and behavior that I've seen so far requires JavaScript to create a dynamic, interactive visualization. Here, the user can play with different scenarios to see how the distributed system will react to different events or scenarios. It visualizes both the decision making process of the replica servers, as well as the ordering of messages as they're sent and received.
 
-[![RaftScope Visualization]({{ site.base_url }}/images/2016-04-26-raftscope-replay-visualization.png)](https://raft.github.io/)
+[![RaftScope Visualization]({{ site.url }}/images/2016-04-26-raftscope-replay-visualization.png)](https://raft.github.io/)
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>RaftScope visualization of the Raft protocol.</small></p>
 
@@ -51,7 +51,7 @@ One of the first places I encountered this was the [RaftScope visualization](htt
 
 Moreover, users can also click on nodes and disable them, make "client requests", pause, or otherwise modify their behavior. This allows custom scenarios to be constructed and interpreted similar to the message sequence diagram, but with more flexibility. The problem is that the entire protocol must be implemented in JavaScript in order to ensure correct visualization (and is therefore a non-trivial, non-development approach to explaining how a system works).
 
-[![The Secret Lives of Data]({{ site.base_url }}/images/2016-04-26-secret-lives-of-data-raft-visualization.png)](http://thesecretlivesofdata.com/raft/)
+[![The Secret Lives of Data]({{ site.url }}/images/2016-04-26-secret-lives-of-data-raft-visualization.png)](http://thesecretlivesofdata.com/raft/)
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>The Secret Lives of Data interactive Raft tutorial</small></p>
 
@@ -59,7 +59,7 @@ This idea was taken one step further by [The Secret Lives of Data](http://thesec
 
 These two examples inspired me to create my own interactive visualization for the work I'm doing on consistency fragmentation. I use a similar design of circles for messages interacting with nodes in a circular topology. Right now it is still unfinished, but I've at least put together an MVP of what it might look like.
 
-[![CloudScope Consistency Visualization]({{ site.base_url }}/images/2016-04-26-cloudscope-consistency-visualization.png)
+[![CloudScope Consistency Visualization]({{ site.url }}/images/2016-04-26-cloudscope-consistency-visualization.png)
 ](http://bbengfort.github.io/cloudscope/)
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>CloudScope interactive consistency fragmentation visualization</small></p>
