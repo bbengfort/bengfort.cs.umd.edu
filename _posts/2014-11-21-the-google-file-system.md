@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Google File System"
+title:  "Reading &ldquo;The Google File System&rdquo;"
 #modified:   2014-11-21 08:51:27 -0500
 tags: [gfs, distributed systems, papers, google, hadoop]
 category: scientific-reading
@@ -9,7 +9,7 @@ share:
 
 ---
 
-> S. Ghemawat, H. Gobioff, and S.-T. Leung, “The Google file system,” in ACM SIGOPS Operating Systems Review, 2003, vol. 37, pp. 29–43.
+> <small>S. Ghemawat, H. Gobioff, and S.-T. Leung, “The Google file system,” in ACM SIGOPS Operating Systems Review, 2003, vol. 37, pp. 29–43.</small>
 
 ## Abstract ##
 
