@@ -5,29 +5,29 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Reading &ldquo;Metastorage: A Federated Cloud Storage System to Manage Consistency-Latency Tradeoffs&rdquo; &#8211; Benjamin Bengfort</title>
+  <title>Reading &ldquo;Harmony: Towards Automated Self-Adaptive Consistency in Cloud Storage&rdquo; &#8211; Benjamin Bengfort</title>
   <meta name="description" content="">
-  <meta name="keywords" content="metastorage, distributed systems, papers, cloud, nosql">
+  <meta name="keywords" content="harmony, distributed systems, papers, cloud, cassandra">
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="http://cs.umd.edu/~bengfort/images/">
-  <meta name="twitter:title" content="Reading &ldquo;Metastorage: A Federated Cloud Storage System to Manage Consistency-Latency Tradeoffs&rdquo;">
+  <meta name="twitter:title" content="Reading &ldquo;Harmony: Towards Automated Self-Adaptive Consistency in Cloud Storage&rdquo;">
   <meta name="twitter:description" content="My graduate research at the University of Maryland">
   <meta name="twitter:creator" content="@bbengfort">
 
   <!-- Open Graph -->
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Reading &ldquo;Metastorage: A Federated Cloud Storage System to Manage Consistency-Latency Tradeoffs&rdquo;">
+  <meta property="og:title" content="Reading &ldquo;Harmony: Towards Automated Self-Adaptive Consistency in Cloud Storage&rdquo;">
   <meta property="og:description" content="My graduate research at the University of Maryland">
-  <meta property="og:url" content="http://cs.umd.edu/~bengfort/scientific-reading/metastorage/">
+  <meta property="og:url" content="http://cs.umd.edu/~bengfort/scientific-reading/harmony/">
   <meta property="og:site_name" content="Benjamin Bengfort">
 
   
   
 
   
-  <link rel="canonical" href="http://cs.umd.edu/~bengfort/scientific-reading/metastorage/">
+  <link rel="canonical" href="http://cs.umd.edu/~bengfort/scientific-reading/harmony/">
   <link href="http://cs.umd.edu/~bengfort/feed.xml" type="application/atom+xml" rel="alternate" title="Benjamin Bengfort Feed">
   <link rel="author" href="https://plus.google.com/+BenjaminBengfort-DataNerd/?rel=author">
 
@@ -99,27 +99,27 @@
   </div>
   <article>
     <div class="headline-wrap">
-      <h1>Reading &ldquo;Metastorage: A Federated Cloud Storage System to Manage Consistency-Latency Tradeoffs&rdquo;</h1>
+      <h1>Reading &ldquo;Harmony: Towards Automated Self-Adaptive Consistency in Cloud Storage&rdquo;</h1>
       <h2></h2>
     </div><!--/ .headline-wrap -->
     <div class="article-wrap">
       <blockquote>
-  <p><small>D. Bermbach, M. Klems, S. Tai, and M. Menzel, “Metastorage: A federated cloud storage system to manage consistency-latency tradeoffs,” in Cloud Computing (CLOUD), 2011 IEEE International Conference on, 2011, pp. 452–459.</small></p>
+  <p><small>H.-E. Chihoub, S. Ibrahim, G. Antoniu, and M. S. Perez, “Harmony: Towards automated self-adaptive consistency in cloud storage,” in 2012 IEEE International Conference on Cluster Computing, 2012, pp. 293–301.</small></p>
 </blockquote>
 
 <h2 id="abstract">Abstract</h2>
 
-<p><small>Cost and scalability benefits of Cloud storage services are apparent. However, selecting a single storage service provider limits availability and scalability to the selected provider and may further cause a vendor lock-in effect. In this paper, we present MetaStorage, a federated Cloud storage system that can integrate diverse Cloud storage providers. MetaStorage is a highly available and scalable distributed hash table that replicates data on top of diverse storage services. MetaStorage reuses mechanisms from Amazon’s Dynamo for cross-provider replication and hence introduces a novel approach to manage consistency-latency tradeoffs by extending the traditional quorum (N,R,W) configurations to an (N<sub><small>P</small></sub>,R,W) scheme that includes different providers as an additional dimension. With MetaStorage, new means to control consistency-latency tradeoffs are introduced.</small></p>
+<p><small>In just a few years cloud computing has become a very popular paradigm and a business success story, with storage being one of the key features. To achieve high data availability, cloud storage services rely on replication. In this context, one major challenge is data consistency. In contrast to traditional approaches that are mostly based on strong consistency, many cloud storage services opt for weaker consistency models in order to achieve better availability and performance. This comes at the cost of a high probability of stale data being read, as the replicas involved in the reads may not always have the most recent write. In this paper, we propose a novel approach, named Harmony, which adaptively tunes the consistency level at run-time according to the application requirements. The key idea behind Harmony is an intelligent estimation model of stale reads, allowing to elastically scale up or down the number of replicas involved in read operations to maintain a low (possibly zero) tolerable fraction of stale reads. As a result, Harmony can meet the desired consistency of the applications while achieving good performance. We have implemented Harmony and performed extensive evaluations with the Cassandra cloud storage on Grid’5000 testbed and on Amazon EC2. The results show that Harmony can achieve good performance without exceeding the tolerated number of stale reads. For instance, in contrast to the static eventual consistency used in Cassandra, Harmony reduces the stale data being read by almost 80% while adding only minimal latency. Meanwhile, it improves the throughput of the system by 45% while maintaining the desired consistency requirements of the applications when compared to the strong consistency model in Cassandra.</small></p>
 
 <h2 id="critical-reading">Critical Reading</h2>
 
-<p>The primary concern of Bermbach et al. seems to be vendor lock in to specific cloud services and the possibility of a single point of failure via downtimes or even going out of business. However, they also identify the fact that cloud services provide a variety of consistency and performance guarantees that have an impact on consistency due to latency. To solve these problems they present a system called MetaStorage which federates several cloud services with a focus on ensuring that MetaStorage is as available as the underlying service.</p>
+<p>The Harmony paper is the second in the series of posts I’m writing that consider adaptive, hybrid, or continuous consistency models particularly with respect to the research I’m currently pursuing on Federated consistency.</p>
 
-<p>MetaStorage performs GET and PUT requests using an (N<sub><small>P</small></sub>,R,W) policy where N is specified not as the number of replica servers but rather the number of providers. Distribution occurs by a list of preferences based on the hash of the key (e.g. a DHT). MetaStorage maintains message queues with each provider and for requests submits the access to R or W replicas in order of the preference, continuing until enough replicas allow for a response. For GET in particular, if R identical responses come in, that response is returned and for any nodes that don’t return that response, they are repaired with that value. If R reads cannot agree, all responses are returned or an error is returned with as many responses as available – thus delegating to the client the handling of inconsistency. Hinted handoffs ensure that all providers receive writes even after a response has been sent.</p>
+<p>Chihoub et al. start with the novel premise that while replication and eventual consistency provide high availability, the performance of such systems (Dynamo, Cassandra, BigTable, PNUTS, and HBase) is too costly in terms of inconsistency. They first cite a statistic that a single hour of down time for a credit card authorization system could cost between $2.2M-3.1M. However, under heavy reads and writes some systems may return up to 66.61% of stale reads. This is alarming because the likelihood is that two out of three reads are useless. They present therefore a consistency model that focuses on stale reads as the primary inconsistency metric and propose an adaptive mechanism called Harmony to address stale reads.</p>
 
-<p>Crucially, in order to ensure that there can be multiple distributors handling requests, some coordination is required – particularly to ensure all nodes maintain the same preference list. Rather than choosing to use a consensus approach to coordination, MetaStorage implements a lightweight, semi-centralized approach by giving all coordinators a complete list of all other coordinators in the system. The master is assumed to be at the top of the list; if the master cannot be reached, it is popped off the list and the next coordinator is selected. As coordinators come online, they are appended to the bottom of the list. Because the list is ordered and as long as every coordinator knows of more than two other coordinators, every replica is guaranteed to choose the same master. Configuration changes then can be made by allowing the master to wait until all currently queued requests are complete, holding all distributor nodes while the configuration is applied, then resuming operation.</p>
+<p>Their solution is to create an adaptive framework that sits on top of Cassandra. Applications can specify consistency in terms of the % of stale reads they are willing to tolerate: 0% stale reads means sequential consistency and 100% stale reads means letting the reigns go on eventual consistency. Most applications will choose some percent in the middle, however defining consistency this way allows applications to specify consistency along a continuum. Once specified, Harmony takes advantage of a Cassandra-specific feature that allows each access to specify the level of consistency. Normal Cassandra consistency settings are ONE or ALL, but you can also specify the number of nodes in the quorum required for an access.  Through real time monitoring of average read and write latencies, the system comes up with a likelihood of a stale read via a Poisson process model and uses that likelihood to compute the number of replicas required for the access such that the number of stale reads given the current likelihood is less than or equal to the application setting.</p>
 
-<p>MetaStorage is certainly interesting as it is a first attempt to federate different consistency models; however MetaStorage can only guarantee eventual consistency both because the underlying storage mechanism is eventually consistent and because of the Dynamo-like policy they use for replication. Moreover while they cite an inconsistency window of 0.09ms (further reinforcing that eventual is fast enough) they show that the latency overhead is 300ms in a single availability region. They have performed no studies that discus geographic or wide area replication.</p>
+<p>In evaluating their framework, Chihoub et al. showed that they could split the middle ground between “eventual” (Cassandra ONE consistency) and “strong” (Cassandra ALL consistency) by using Harmony-80% and Harmon-40% settings, thereby allowing consistency tuning. However, they also showed that as the number of threads increases, throughput decreases so that the eventual systems become as bad as the strong systems. Potentially this has to do with the implementation (Python 2.7) of adaptive consistency not being able to keep up, or perhaps it indicates a systematic problem in larger distributed systems. Overall, stale reads is an interesting approach to minimizing inconsistencies, and I think this paper did well to show adaptivity in real time. However, this model only works in Cassandra and Dynamo, and no consistency checking in terms of ordering was done.</p>
 
       <hr />
       <footer role="contentinfo">
@@ -137,7 +137,7 @@
 
 
         </div>
-        <p class="byline"><strong>Reading &ldquo;Metastorage: A Federated Cloud Storage System to Manage Consistency-Latency Tradeoffs&rdquo;</strong> was published on <time datetime="2016-08-30T00:00:00-04:00">August 30, 2016</time> by <a href="http://cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
+        <p class="byline"><strong>Reading &ldquo;Harmony: Towards Automated Self-Adaptive Consistency in Cloud Storage&rdquo;</strong> was published on <time datetime="2016-09-07T00:00:00-04:00">September 07, 2016</time> by <a href="http://cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
         
         </p>
       </footer>
@@ -153,7 +153,7 @@
       
       
       
-      <li><a href="http://cs.umd.edu/~bengfort/scientific-reading/harmony/" title="Reading &ldquo;Harmony: Towards Automated Self-Adaptive Consistency in Cloud Storage&rdquo;">Reading &ldquo;Harmony: Towards Automated Self-Adaptive Consistency in Cloud Storage&rdquo;</a></li>
+      <li><a href="http://cs.umd.edu/~bengfort/scientific-reading/metastorage/" title="Reading &ldquo;Metastorage: A Federated Cloud Storage System to Manage Consistency-Latency Tradeoffs&rdquo;">Reading &ldquo;Metastorage: A Federated Cloud Storage System to Manage Consistency-Latency Tradeoffs&rdquo;</a></li>
       
     
       
