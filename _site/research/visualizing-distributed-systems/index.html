@@ -10,7 +10,7 @@
   <meta name="keywords" content="visualization, research, simulation, distributed systems">
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="http://cs.umd.edu/~bengfort/images/">
+  <meta name="twitter:image" content="http://localhost:4000/images/">
   <meta name="twitter:title" content="Visualizing Distributed Systems">
   <meta name="twitter:description" content="My graduate research at the University of Maryland">
   <meta name="twitter:creator" content="@bbengfort">
@@ -20,15 +20,15 @@
   <meta property="og:type" content="article">
   <meta property="og:title" content="Visualizing Distributed Systems">
   <meta property="og:description" content="My graduate research at the University of Maryland">
-  <meta property="og:url" content="http://cs.umd.edu/~bengfort/research/visualizing-distributed-systems/">
+  <meta property="og:url" content="http://localhost:4000/research/visualizing-distributed-systems/">
   <meta property="og:site_name" content="Benjamin Bengfort">
 
   
   
 
   
-  <link rel="canonical" href="http://cs.umd.edu/~bengfort/research/visualizing-distributed-systems/">
-  <link href="http://cs.umd.edu/~bengfort/feed.xml" type="application/atom+xml" rel="alternate" title="Benjamin Bengfort Feed">
+  <link rel="canonical" href="http://localhost:4000/research/visualizing-distributed-systems/">
+  <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Benjamin Bengfort Feed">
   <link rel="author" href="https://plus.google.com/+BenjaminBengfort-DataNerd/?rel=author">
 
   <!-- http://t.co/dKP3o1e -->
@@ -39,21 +39,21 @@
   <!-- Google Webfonts -->
   <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
   <!-- For all browsers -->
-  <link rel="stylesheet" href="http://cs.umd.edu/~bengfort/assets/css/main.min.css">
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/main.min.css">
 
   <meta http-equiv="cleartype" content="on">
 
   <!-- HTML5 Shiv and Media Query Support -->
   <!--[if lt IE 9]>
-  	<script src="http://cs.umd.edu/~bengfort/assets/js/vendor/html5shiv.min.js"></script>
-  	<script src="http://cs.umd.edu/~bengfort/assets/js/vendor/respond.min.js"></script>
+  	<script src="http://localhost:4000/assets/js/vendor/html5shiv.min.js"></script>
+  	<script src="http://localhost:4000/assets/js/vendor/respond.min.js"></script>
   <![endif]-->
 
   <!-- Modernizr -->
-  <script src="http://cs.umd.edu/~bengfort/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+  <script src="http://localhost:4000/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
 
   <!-- Icons -->
-  <link rel="shortcut icon" href="http://cs.umd.edu/~bengfort/favicon.ico">
+  <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
 
 </head>
 
@@ -63,17 +63,17 @@
 
 <div class="navigation-wrapper">
 	<div class="site-name">
-		<a href="http://cs.umd.edu/~bengfort">Benjamin Bengfort</a>
+		<a href="http://localhost:4000">Benjamin Bengfort</a>
 	</div><!-- /.site-name -->
 	<div class="top-navigation">
 		<nav role="navigation" id="site-nav" class="nav">
 		    <ul>
 		        
-				<li><a href="http://cs.umd.edu/~bengfort/about/" >About</a></li>
+				<li><a href="http://localhost:4000/about/" >About</a></li>
 		        
-				<li><a href="http://cs.umd.edu/~bengfort/publications/" >Publications</a></li>
+				<li><a href="http://localhost:4000/publications/" >Publications</a></li>
 		        
-				<li><a href="http://cs.umd.edu/~bengfort/posts/" >Posts</a></li>
+				<li><a href="http://localhost:4000/posts/" >Posts</a></li>
 		        
 		    </ul>
 		</nav>
@@ -84,7 +84,7 @@
 
 <div id="main" role="main">
   <div class="article-author-side">
-    <img src="http://cs.umd.edu/~bengfort/images/bio-photo.jpg" class="bio-photo" alt="Benjamin Bengfort bio photo"></a>
+    <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Benjamin Bengfort bio photo"></a>
 <h3>Benjamin Bengfort</h3>
 <p>Studying distributed storage systems and hoping for a PhD.</p>
 <a href="https://twitter.com/bbengfort" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
@@ -114,7 +114,7 @@
 
 <p>One high level view of the design of a system looks at the propagation of events, or messages being sent between nodes in the distributed system. This can be visualized using a <a href="https://en.wikipedia.org/wiki/Message_sequence_chart">message sequence chart</a> which embeds the time flow of a system and displays the interaction between nodes as they generate messages in reaction to received messages.</p>
 
-<p><a href="https://www.cs.cmu.edu/~dga/papers/epaxos-sosp2013.pdf"><img src="http://cs.umd.edu/~bengfort/images/2016-04-26-epaxos-message-flow.png" alt="Paxos Message Flow Diagram" /></a></p>
+<p><a href="https://www.cs.cmu.edu/~dga/papers/epaxos-sosp2013.pdf"><img src="http://localhost:4000/images/2016-04-26-epaxos-message-flow.png" alt="Paxos Message Flow Diagram" /></a></p>
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>Message flow diagram for EPaxos</small></p>
 
@@ -122,7 +122,7 @@
 
 <p>One method of designing a distributed system is to consider the design of only a <em>single</em> instance. Each instance reacts to events (messages) then can update their state or do some work, and generate messages of their own. The receipt and sending of messages defines the collective behavior. This is a simplification of the <a href="https://en.wikipedia.org/wiki/Actor_model">actor model</a> of distributed computing. This seems like it might make things a bit easier, because now we only have to visualize the behavior of a single instance, and describe message handling as a flow chart of decision making.</p>
 
-<p><a href="http://cs.umd.edu/~bengfort/images/2016-04-26-raft-message-flow.png"><img src="http://cs.umd.edu/~bengfort/images/2016-04-26-raft-message-flow.png" alt="Flow Chart of Raft Messages" /></a></p>
+<p><a href="http://localhost:4000/images/2016-04-26-raft-message-flow.png"><img src="http://localhost:4000/images/2016-04-26-raft-message-flow.png" alt="Flow Chart of Raft Messages" /></a></p>
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>Raft message reaction flow chart</small></p>
 
@@ -135,7 +135,7 @@ Each RPC roughly has their own zone in the flow chart. State changes are represe
 
 <p>The most interesting combination of message traffic and behavior that I’ve seen so far requires JavaScript to create a dynamic, interactive visualization. Here, the user can play with different scenarios to see how the distributed system will react to different events or scenarios. It visualizes both the decision making process of the replica servers, as well as the ordering of messages as they’re sent and received.</p>
 
-<p><a href="https://raft.github.io/"><img src="http://cs.umd.edu/~bengfort/images/2016-04-26-raftscope-replay-visualization.png" alt="RaftScope Visualization" /></a></p>
+<p><a href="https://raft.github.io/"><img src="http://localhost:4000/images/2016-04-26-raftscope-replay-visualization.png" alt="RaftScope Visualization" /></a></p>
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>RaftScope visualization of the Raft protocol.</small></p>
 
@@ -143,7 +143,7 @@ Each RPC roughly has their own zone in the flow chart. State changes are represe
 
 <p>Moreover, users can also click on nodes and disable them, make “client requests”, pause, or otherwise modify their behavior. This allows custom scenarios to be constructed and interpreted similar to the message sequence diagram, but with more flexibility. The problem is that the entire protocol must be implemented in JavaScript in order to ensure correct visualization (and is therefore a non-trivial, non-development approach to explaining how a system works).</p>
 
-<p><a href="http://thesecretlivesofdata.com/raft/"><img src="http://cs.umd.edu/~bengfort/images/2016-04-26-secret-lives-of-data-raft-visualization.png" alt="The Secret Lives of Data" /></a></p>
+<p><a href="http://thesecretlivesofdata.com/raft/"><img src="http://localhost:4000/images/2016-04-26-secret-lives-of-data-raft-visualization.png" alt="The Secret Lives of Data" /></a></p>
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>The Secret Lives of Data interactive Raft tutorial</small></p>
 
@@ -151,7 +151,7 @@ Each RPC roughly has their own zone in the flow chart. State changes are represe
 
 <p>These two examples inspired me to create my own interactive visualization for the work I’m doing on consistency fragmentation. I use a similar design of circles for messages interacting with nodes in a circular topology. Right now it is still unfinished, but I’ve at least put together an MVP of what it might look like.</p>
 
-<p><a href="http://bbengfort.github.io/cloudscope/"><img src="http://cs.umd.edu/~bengfort/images/2016-04-26-cloudscope-consistency-visualization.png" alt="CloudScope Consistency Visualization" />
+<p><a href="http://bbengfort.github.io/cloudscope/"><img src="http://localhost:4000/images/2016-04-26-cloudscope-consistency-visualization.png" alt="CloudScope Consistency Visualization" />
 </a></p>
 
 <p style="text-align: center; font-weight: bold; padding-bottom:10px"><small>CloudScope interactive consistency fragmentation visualization</small></p>
@@ -172,7 +172,7 @@ Each RPC roughly has their own zone in the flow chart. State changes are represe
       <hr />
       <footer role="contentinfo">
         <div class="article-author-bottom">
-          <img src="http://cs.umd.edu/~bengfort/images/bio-photo.jpg" class="bio-photo" alt="Benjamin Bengfort bio photo"></a>
+          <img src="http://localhost:4000/images/bio-photo.jpg" class="bio-photo" alt="Benjamin Bengfort bio photo"></a>
 <h3>Benjamin Bengfort</h3>
 <p>Studying distributed storage systems and hoping for a PhD.</p>
 <a href="https://twitter.com/bbengfort" class="author-social" target="_blank"><i class="icon-twitter"></i> Twitter</a>
@@ -185,7 +185,7 @@ Each RPC roughly has their own zone in the flow chart. State changes are represe
 
 
         </div>
-        <p class="byline"><strong>Visualizing Distributed Systems</strong> was published on <time datetime="2016-04-26T00:00:00-04:00">April 26, 2016</time> by <a href="http://cs.umd.edu/~bengfort/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
+        <p class="byline"><strong>Visualizing Distributed Systems</strong> was published on <time datetime="2016-04-26T00:00:00-04:00">April 26, 2016</time> by <a href="http://localhost:4000/about" title="About Benjamin Bengfort">Benjamin Bengfort</a>.
         
         </p>
       </footer>
@@ -195,7 +195,7 @@ Each RPC roughly has their own zone in the flow chart. State changes are represe
 
 <div class="footer-wrap">
   <div class="related-articles">
-  <h4>You might also enjoy <small class="pull-right">(<a href="http://cs.umd.edu/~bengfort/posts/">View all posts</a>)</small></h4>
+  <h4>You might also enjoy <small class="pull-right">(<a href="http://localhost:4000/posts/">View all posts</a>)</small></h4>
     <ul>
     
       
@@ -209,21 +209,21 @@ Each RPC roughly has their own zone in the flow chart. State changes are represe
       
       
       
-      <li><a href="http://cs.umd.edu/~bengfort/research/actors-for-distributed-dataflow/" title="Actors for Distributed Dataflow">Actors for Distributed Dataflow</a></li>
+      <li><a href="http://localhost:4000/research/actors-for-distributed-dataflow/" title="Actors for Distributed Dataflow">Actors for Distributed Dataflow</a></li>
       
     
     </ul>
     <hr />
   </div><!-- /.related-articles -->
   <footer>
-    <span>&copy; 2016 Benjamin Bengfort. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
+    <span>&copy; 2017 Benjamin Bengfort. Powered by <a href="http://jekyllrb.com">Jekyll</a> using the <a href="http://mademistakes.com/minimal-mistakes/">Minimal Mistakes</a> theme.</span>
 
   </footer>
 </div><!-- /.footer-wrap -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="http://cs.umd.edu/~bengfort/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-<script src="http://cs.umd.edu/~bengfort/assets/js/scripts.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://localhost:4000/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://localhost:4000/assets/js/scripts.min.js"></script>
 
 <!-- Google Analytics Snippet -->
 <script>
