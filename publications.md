@@ -7,7 +7,7 @@ tags: [publications, CV, research]
 modified: 2015-03-22 14:56:42 -0400
 ---
 
-1. B. Bengfort and P. Keleher, “Geo-Replicating Federated File Systems (Submitted),” in 2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS), Atlanta, GA, 2017.
+1. B. Bengfort and P. Keleher, “Federating Consistency for Partition-Prone Networks,” Poster Presented at 2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS), Atlanta, GA, 2017.
 
 2. B. Bengfort, R. Bilbro, and T. Ojeda, [Applied Text Analysis with Python: Enabling Language Aware Data Products with Machine Learning](http://shop.oreilly.com/product/0636920052555.do). O’Reilly Media, Inc., 2017.
 
