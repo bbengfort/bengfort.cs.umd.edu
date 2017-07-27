@@ -7,9 +7,9 @@ tags: [publications, CV, research]
 modified: 2015-03-22 14:56:42 -0400
 ---
 
-1. B. Bengfort and P. Keleher, “Brief Announcement: Hierarchical Consensus,” in Proceedings of the 2017 ACM Symposium on Principles of Distributed Computing, Washington, D.C., 2017, pp. 355–357. [[PDF]]({{ site.url }}/papers/brief-annoucement-hierarchical-consensus.pdf)
+1. B. Bengfort and P. Keleher, “Brief Announcement: Hierarchical Consensus,” in Proceedings of the 2017 ACM Symposium on Principles of Distributed Computing, Washington, D.C., 2017, pp. 355–357. <!-- [[PDF]]({{ site.url }}/papers/brief-annoucement-hierarchical-consensus.pdf) -->
 
-2. B. Bengfort and P. Keleher, “Federating Consistency for Partition-Prone Networks,” Proceedings of the 2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS), Atlanta, GA, 2017. [[PDF]]({{ site.url }}/papers/federated-consistency.pdf)
+2. B. Bengfort and P. Keleher, “Federating Consistency for Partition-Prone Networks,” Proceedings of the 2017 IEEE 37th International Conference on Distributed Computing Systems (ICDCS), Atlanta, GA, 2017. <!-- [[PDF]]({{ site.url }}/papers/federated-consistency.pdf) -->
 
 3. B. Bengfort, R. Bilbro, and T. Ojeda, [Applied Text Analysis with Python: Enabling Language Aware Data Products with Machine Learning](http://shop.oreilly.com/product/0636920052555.do). O’Reilly Media, Inc., 2017.
 
